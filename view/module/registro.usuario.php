@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="view/css/login.css">
+    <link rel="stylesheet" href="../../view/css/registro.usuario.css">
 </head>
 <body>
     <form class="formulario">
@@ -24,8 +24,8 @@
                 <i class="fa-solid fa-lock icon"></i>
                 <input type="password" placeholder="Contraseña">
             </div>
-            <input type="submit" value="Registrate" class="button">
-            <p>Al registrarte, aceptas nuestras condicones de uso y politicas de privacidad</p>
+            <input type="submit" value="Registrate" class="btn">
+            <p>hola mundo</p>
             <p>¿Ya estas Registrado?<a class="link" href="login.php">Iniciar Sesion</a></p>
 
 

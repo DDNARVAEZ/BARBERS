@@ -1,3 +1,6 @@
+
+/*CUERPO*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -10,67 +13,26 @@ body {
   box-sizing: border-box;
 
 }
+
+/*CONTENEDORES*/
 .contenedor{
   width: 100%;
   padding: 50px;
-  
-
 }
+
+.input-contenedor{
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+
+/*FORMULARIO*/
 
 .formulario{
   background: #fff;
   margin-top: 150%;
   padding: 3px;
 }
-h1{
-  text-align: center;
-  color: #1a2537;
-  font-size: 40px;
-}
-input[type="text"], 
-input[type="password"]{
-  font-size:  20px;
-  width: 82%;
-  padding: 10px;
-  border:none;
-}
 
-.input-contenedor{
-  margin-bottom: 15px;
-  border: 1px solid #aaa;
-
-}
-.icon{
-  min-width: 50px;
-  text-align: center;
-  color: #999;
-}
-.button{
-  border: none;
-  width: 100%;
-  color: white;
-  font-size: 20px;
-  background: #1a2537;
-  padding: 15px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.button:hover{
-  background: cadetblue;
-}
-p{
-  text-align: center;
-
-}
-.link{
-  text-decoration: none;
-  color: #1a2537;
-  font-weight: 600;
-}
-.link:hover{
-  color: cadetblue;
-
-}
 @media(min-width:768px)
 {
   .formulario{
@@ -80,6 +42,112 @@ p{
     border-radius: 2%;
   }
 }
+
+/*H1*/
+h1{
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px;
+}
+
+/*ENTRADAS*/
+input[type="text"], 
+input[type="password"]{
+  font-size:  20px;
+  width: 82%;
+  padding: 10px;
+  border:none;
+}
+
+/*ICONOS*/
+.icon{
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+
+.icon2{
+  color: rgb(255, 0, 85);
+}
+
+.icon3{
+  color: rgb(72, 228, 98, 0.76);
+  font-size: 60px;
+  margin-left: 220px;
+  margin-top: 40px;
+}
+
+/*BOTONES*/
+.btn{
+  
+  display: inline-block;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: rgb(72, 228, 98, 0.76);
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration-color: transparent;
+  margin-top: 10px;
+  
+}
+.btn:hover{
+  background: cadetblue;
+}
+
+.btn2{
+  
+  display: inline-block;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #999ea7;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration-color: transparent;
+  margin-top: 10px;
+  
+  
+  
+}
+.btn2:hover{
+  background: cadetblue;
+}
+
+
+/*PARRAFOS*/
+p{
+  text-align: center;
+
+/*ENLACES*/
+
+}
+.link{
+  text-decoration: none;
+  color: #16f0a7;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.link:hover{
+  color: cadetblue;
+
+
+}
+.link2{
+  text-decoration: none;
+  color: #e63b51;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.link2:hover{
+  color: cadetblue;
+}
+
+/*FRACES*/
 .bienvenido{
   text-align: center;
   background: rgb(63, 160, 240);
@@ -87,7 +155,7 @@ p{
   padding: 10px;
   margin-left: 150px;
   border: 1px solid #aaa;
-  margin-top: 15px;
+  margin-top: 40px;
   border-radius: 3%;
   border: none;
   
@@ -95,9 +163,8 @@ p{
 .frase{
   margin-left: 1100px;
   font-size: 45px;
-  color: rgba(53, 228, 47, 0.596);
+  color: rgb(72, 228, 98, 0.76);
 
 }
-.icon2{
-  color: rgb(255, 0, 85);
-}
+
+
