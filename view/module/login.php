@@ -19,10 +19,10 @@
         <div class="contenedor">
         
             <div class="input-contenedor">             
-                <input type="text" name="txtuser" placeholder="Ingresar E-mail">
+                <input type="text" name="txtUser" placeholder="Ingresar E-mail">
             </div>
             <div class="input-contenedor">
-                <input type="password" name="txtcontraseña" placeholder="Ingresar Contraseña">
+                <input type="password" name="txtPass" placeholder="Ingresar Contraseña">
             </div>
 
             
@@ -35,6 +35,17 @@
         </div>
             
     </form>
+    <!--CONTRALADOR CONEXION -->
+    <?php
+    if (isset($_POST["txtUser"])){
+        $user = $_POST["txtUser"];
+        $pass = $_POST["txtPass"];
+        $objCon = new ConexionController();
+        $objCon -> ctrLogin($user, $pass);
+    }
+
+    ?>
+
     <div class="frase">
         I LOVE BARBER <i class="fa-solid fa-face-grin-hearts icon2"></i>
     </div>

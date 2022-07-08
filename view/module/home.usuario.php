@@ -17,7 +17,7 @@
     </div>
 
   
-    <div  width= 300 heigth=50 background= blue> 
+    <div> 
     <i class="fa-solid fa-circle-user"></i>
     User name </div>
     <div>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../view/css/registro.usuario.css">
 </head>
 <body>
+    
     <form class="formulario">
         <h1>Registrate</h1>
         <div class="contenedor">
