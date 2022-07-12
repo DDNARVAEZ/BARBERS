@@ -30,7 +30,7 @@
             <a class="link" href="">Recordar Contraseña</a><br/>
             <a class="link2" href="">Cambiar Contraseña</a>
 <!-- BOTONES-->        
-            <a href=""><input class="btn" type="button" value="Iniciar Sesion"></a>
+            <input class="btn" type="submit" value="Iniciar Sesion">
             <a href="view/module/registro.usuario.php"><input class="btn2" type="button" value="Registrar Cuenta"></a>
         </div>
             

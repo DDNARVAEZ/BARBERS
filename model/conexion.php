@@ -15,12 +15,8 @@
             $this -> driver = "mysql";
             $this -> usuario = "root";
             $this -> clave = "";
-            $this -> dataBase = "BARBERS";
-            //mysql:host=localhost;dbname=barbers;
-
-            
-            $this -> url = $this -> driver.":host=".
-            $this -> host.";dbname=". $this -> dataBase;
+            $this -> base = "barbers";
+            $this -> url = $this -> driver.":host=".$this -> host.";dbname=". $this -> base;
             $this -> charSet = "UTF8";
             $this -> con=NULL;
         }//fin cosntructor
@@ -29,9 +25,10 @@
             try{
                 
                 $this -> con = new PDO($this->url, $this->usuario, $this->clave);
+            
                 $this -> con ->	setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, 	PDO::FETCH_ASSOC);
                 $this -> con -> exec('SET CHARACTER SET '.$this->charSet);
-                echo "conectado";
+                
             }catch(PDOException $e){
                 echo "Error al conectarme".$e->getMessage();
             }

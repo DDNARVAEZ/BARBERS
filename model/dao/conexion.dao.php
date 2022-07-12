@@ -19,18 +19,19 @@ class ModelConexion{
         $resultSet = false;
 
 
-        $sql = "SELECT CONTRASEÑA FROM USUARIOS
-        WHERE EMAIL = ? AND CONTRASEÑA = ?";
+        $sql = "SELECT CONTRASENA FROM USUARIOS
+        WHERE EMAIL = ? AND CONTRASENA = ?";
 
         try {
             $con = new Conexion();
+            
             $stmt = $con -> conexion() -> prepare($sql);
             $stmt -> bindParam(1, $this -> user, PDO::PARAM_STR);
-            $stmt -> bindParam(1, $this -> pass, PDO::PARAM_STR);
+            $stmt -> bindParam(2, $this -> pass, PDO::PARAM_STR);
             
             $stmt -> execute();
             $resultSet = $stmt;                
-            
+        
         } catch (PDOException $e) {
             echo "Error en el metodo buscar password " . $e->getMessage();
         }
