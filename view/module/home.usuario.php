@@ -17,31 +17,46 @@
     <div class="contenedor1">
         <img src="view/img/logo.jpg" alt="logo" width= "100" heigth= 200>
         <div class="contenedor2">
-        <i class="fa-solid fa-circle-user icon a" > user</i>
+            <i class="fa-solid fa-circle-user icon" ></i> 
         
-        </div>
-        
+    </div>
+
+    
+      <!-- cerrar sesion -->  
     
     <form method="post" class="formulario">
-    
-        <div class= >
         <input type="hidden" name="txtOcu">
-        <input type="submit" value="SALIR"> 
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-        </div>
-        
+        <input type="submit" class="salir" value=" SALIR">      
     </form>
 
-    </div>
     <?php
         if (isset($_POST["txtOcu"])){
             $_SESSION["login"] = false;
             header("location:index.php");
         }
-
-
-
     ?>
+    <!-- fecha actual-->
+    <div class="date">
+        <?php
+        date_default_timezone_set("America/Bogota");
+        echo date(" D / d / M / Y");
+        
+        ?>
+    </div>
+
+    <!-- ingreso a modulos -->
+    
+    <div class="contenedor4">
+    <a href=""><input class="btn-mod-user" type="button" value="   USUARIO"></a>
+    </div>
+    
+    <div class="contenedor5">
+    <a href=""><input class="btn-mod-citas" type="button" value="   CITAS"></a>
+    </div>
+
+    <div class="frase">
+        I LOVE <br> BARBER <i class="fa-solid fa-face-grin-hearts icon-love"></i>
+    </div>
 
 
 

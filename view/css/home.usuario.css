@@ -26,17 +26,20 @@ body {
     top: 5%;
     background-color: white;
     width: 300px;
-    height: 50px;
+    height: 60px;
     font-size: 10px;
     border-radius: 3px;
     padding-bottom: 30px;
    }
+
+
 
    /*imagenes*/
 
   /*imagenes*/
   img {width: 100px;
      height: 115px;
+     
   }
    /*iconos*/
 
@@ -44,13 +47,95 @@ body {
     font-size: 50px;
    }
 
-    /*formulario*/
+   
+/*salida*/
+    .salir{
 
-    .formulario{
-        position: absolute;
-        left: 95%;
-        top: 5%;
+      left: 92%;
+      top: 5%;
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      border-color: aqua;
+      background-color: white;
+      padding-left: 0px;
+      cursor: pointer;
+      text-decoration-color: transparent;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 1000;
+      
+      
     }
+
+    .salir:hover{
+      background: cadetblue;
+    }
+
+      /*input*/
+
+    .btn-mod-user, .btn-mod-citas{
+      font-size: 40px;
+      color: white;
+      background-color:rgb(37, 209, 240);
+      width: 700px;
+      height: 150px;
+      position: relative;
+      left: 25%;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      border-radius: 10px;
+      border: thin;
+      cursor: pointer;
+      text-decoration-color: transparent;
+      margin: 40px 0px;
+      
+    }
+    .btn-mod-user:hover,.btn-mod-citas:hover{
+      background: cadetblue;
+    }
+
+     /*FECHA ACTUAL*/
+
+     .date{
+      background-color: rgba(40, 5, 238, 0.863);
+      width: 250px;
+      height: 50px;
+      text-align: center;
+      position: relative;
+      left: 442%;
+      top: 5%;
+      border: thin;
+      border-radius: 5px;
+      font-size: 20px;
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 550;
+ 
+     }
+
+      .frase{
+      font-size: 45px;
+      color: rgb(37, 209, 240);
+      position: relative;
+      left: 80%;
+      bottom: 100%;
+     
+    
+    }
+    .icon-love{
+      color: rgb(255, 0, 85);
+    }
+   
+    
+
+    
+        
+        
+
+ 
 
     
 
