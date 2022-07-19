@@ -11,73 +11,46 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img  class="logo2" src="logo.jpg">
+            <div class="logo2">
+                <img  class="logoi2" src="logo.jpg">
             </div>
-            <div class="R_usuar1">REGISTRO DE USUARIOS</div> 
+            <div class="R_usuar2">REGISTRO DE USUARIOS</div> 
         </header>
-        <nav class="Boto_usuar1"> 
-            <br>
-            <div class="conte_boto1">
-                <button class="Botons_stlo1" >
-                    Registro De Usuario
-                </button>
-            </div>
-            <br>
-            <div class="conte_boto1">
-                <button class="Botons_stlo1">Ver Usuario
-                    <a href=""></a> </button>
-            </div>
-            <br>
-            <div class="conte_boto1">
-                <button class="Botons_stlo1">Editar Usuario</button>
-            </div>
-            <br>
-            <div class="conte_boto1">
-                <button class="Botons_stlo1">Eliminar o Inhabilitar</button>
-            </div>
-            <br>
-            <div class="Desplegable">
-                <button class="btnDesp">Boton Despegable</button>
-                <div class="links">
-                    <a href="citas">Citas</a>
-                    <a href="Barberos">Barberos</a>
-                    <a href="Agenda">Agenda</a>
-                    <a href="Inicio De Sesion">Inicio De Sesion</a>
-                </div>
-            </div>
-        </nav>
-        <main class="main">
+    
+        <main class="main2">
             <br>
             <form class="Form_datusu">
                 <fieldset class="Dat_usu">
-                    <legend class="Lege_txt">Datos De Usuario</legend>
+                    <legend class="Lege_txt2">Datos De Usuario</legend>
+                    <br>
                     <br>
                     <div>
-                    <input type="email" placeholder="E-mail" class="Bot_emai">
+                    <input type="email" placeholder="E-mail" class="Bot_emai" required>
                     <br>
                     *este funcionara como tu usuario
                     </div>
                     <br>
+                    <br>
                     <div>
-                        <input type="text" placeholder="Contraseña"class="BotDatUsu">
+                        <input type="text" placeholder="Contraseña"class="BotDatUsu" required>
                         <br>
                         *minimo 6 caracteres maximo 12 
                         
                     </div>
                     <br>
+                    <br>
                     <div>
-                        <input type="text" placeholder="Confirmar Contraseña"class="BotDatUsu"> 
+                        <input type="text" placeholder="Confirmar Contraseña"class="BotDatUsu" required> 
                     </div>
                     <br>
+                    <br>
                     <button type="reset" class="btnC">Cancelar</button>
-                    <button class="btnCo">Continuar</button>
+                    <button type="submit" class="btnCo">Continuar</button>
                 </fieldset>
             </form>
-
         </main>
         <footer>
-            <div class="frase">
+            <div class="frase2">
                 <h2> I LOVE BARBER    <i class="fa-solid fa-face-grin-hearts icon2"></i></h2>
             </div>
           

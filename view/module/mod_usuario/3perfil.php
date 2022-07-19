@@ -10,64 +10,40 @@
         <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        
         <header>
-            <div class="logo">
-                <img  class="logo3" src="logo.jpg">
+            <div class="logo3">
+                <img  class="logoi3" src="logo.jpg">
             </div>
             <div class="R_usuar3">REGISTRO DE USUARIOS</div> 
         </header>
-        <nav class="Boto_usuar3"> 
-            <br>
-            <div class="conte_boto3">
-                <button class="Botons_stlo3" >
-                    Registro De Usuario
-                </button>
-            </div>
-            <br>
-            <div class="conte_boto3">
-                <button class="Botons_stlo3">Ver Usuario
-                    <a href=""></a> </button>
-            </div>
-            <br>
-            <div class="conte_boto3">
-                <button class="Botons_stlo3">Editar Usuario</button>
-            </div>
-            <br>
-            <div class="conte_boto3">
-                <button class="Botons_stlo3">Eliminar o Inhabilitar</button>
-            </div>
-            <br>
-            <div class="Desplegable">
-                <button class="btnDesp">Boton Despegable</button>
-                <div class="links">
-                    <a href="citas">Citas</a>
-                    <a href="Barberos">Barberos</a>
-                    <a href="Agenda">Agenda</a>
-                    <a href="Inicio De Sesion">Inicio De Sesion</a>
-                </div>
-            </div>
+        <nav>
+            
         </nav>
-        <main class="main1" >
+        <main class="main3" >
             <fieldset class="FPerf">
-                <legend class="Lege_txt1">Perfil</legend>
+                <legend class="Lege_txt3">Perfil</legend>
 
                 <div class="txtfotPe">
                     Foto De Perfil
                 </div> 
                 <div class="IcoUse">
-                    <i class="fa-solid fa-circle-user"></i>
+                    <div>
+                        <img class="img_perf" src="" alt="" id="img-imagen">
+                    </div>
                 </div>
-                <form class="#">
+                <form class="for_3">
                         <br>
                         <div class="ImgPer">
-                        <p class="txtFot">Subir una foto</p>
-                            <div class="icon1">
-                                <i class="fa-solid fa-circle-arrow-up"></i>
+                            <p class="txtFot">Subir una foto</p>
+                            <div class="icon3">
+                                <i class="fa-solid fa-circle-arrow-up" id="icon_bot"></i>
                             </div>
-                                <input type="file" name="imagen" >
+                            
+                                <input class="img3" type="file" name="imagen" id="img_3" onchange="vista_preliminar(event)" >
                         </div>
                     <fieldset class="Savatar"> 
-                        <legend class="Lege_txt3">Seleccionar Avatar </legend>   
+                        <legend class="Lege_txt3a">Seleccionar Avatar </legend>   
                             <br>
                             <br>
                             <i class="fa-solid fa-cat"></i>
@@ -76,6 +52,7 @@
                             <i class="fa-regular fa-face-grin-tongue"></i>
                             <i class="fa-solid fa-user-astronaut"></i>
                             <i class="fa-solid fa-poo"></i>
+                            <br>
                             <br>
                             <br>
                             <i class="fa-solid fa-ghost"></i>
@@ -89,10 +66,10 @@
                         </div>
                     </fieldset>
                         <br>
-                        <div class="btnCA">
-                            <button type="reset" class="btnC1">Cancelar</button>
-                            <button class="btnCo1">Continuar</button>
-                        </div>
+                    <div class="btnCA">
+                        <button type="reset" class="btnC3">Cancelar</button>
+                        <button class="btnCo3">Continuar</button>
+                    </div>    
                     
                 </form>
             </fieldset>    
@@ -100,14 +77,14 @@
 
         </main>
         <footer>
-            <div class="frase">
+            <div class="frase3">
                 <h2> I LOVE BARBER    <i class="fa-solid fa-face-grin-hearts icon2"></i></h2>
             </div>
           
         </footer>
             
         
-    
+    <script src="./funciones.js"></script>
     </body>
-    
+    php
 </html>

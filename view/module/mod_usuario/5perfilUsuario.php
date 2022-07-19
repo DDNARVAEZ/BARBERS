@@ -10,79 +10,67 @@
         <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <header> 
             <div class="hom">
-                <headers class="homl>
-                    <a href="view/module/home.usuario.php" ><b>HOME</b> l</a>
-                    <i class="fa-solid fa-house"></i>
-                </headers>  
-                </div>
-            <div class="R_usuar5">REGISTRO DE USUARIOS</div> 
+                <a class="homE" href="view/module/home.usuario.php" ><b>HOME</b> l</a>
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="hom1">
+                <b>nombre de usuario</b>  
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+            </div>
+             
         </header>
+        <br>
         <nav class="Boto_usuar5"> 
             <br>
-            <div class="conte_boto5">
-                <button class="Botons_stlo5" >
-                    Registro De Usuario
-                </button>
-            </div>
-            <br>
-            <div class="conte_boto5">
-                <button class="Botons_stlo5">Ver Usuario
-                    <a href=""></a> </button>
-            </div>
-            <br>
-            <div class="conte_boto5">
-                <button class="Botons_stlo5">Editar Usuario</button>
-            </div>
-            <br>
-            <div class="conte_boto5">
-                <button class="Botons_stlo5">Eliminar o Inhabilitar</button>
-            </div>
-            <br>
             <div class="Desplegable">
-                <button class="btnDesp">Boton Despegable</button>
+                <button class="btnDesp">Usuario</button>
                 <div class="links">
-                    <a href="citas">Citas</a>
-                    <a href="Barberos">Barberos</a>
-                    <a href="Agenda">Agenda</a>
-                    <a href="Inicio De Sesion">Inicio De Sesion</a>
+                    <a href="5perfilUsuario.html">Ver usuario</a>
+                    <a href="6EditPerfil.html">Editar Usuario</a>
+                    <a href="7Eliminar.html">Eliminar Usuario</a>
                 </div>
             </div>
+            <br>
         </nav>
-        <main class="DatPers2">
-            <div class="DP">
-                <h2>Perfil De Usuario</h2>
-            </div>
-            <div class="IcoUse">
-                <i class="fa-solid fa-circle-user"></i>
-            </div>
-            <form class="F_perf_usu">
-                <button class="BtnDatsP1">DATOS PERSONALES</button>
-                <button class="BtnDatsP">DATOS DE USUARIO</button>
-                <br>
-                <br>
-                <div>
-                    <input type="text" placeholder="Nombre" class="txt_per_usu"> 
-                 </div>
-                 <br>
-                 <div>
-                     <input type="text" placeholder="apellido"class="txt_per_usu"> 
-                 </div>
-                 <br>
-                 <div>
-                     <input type="text" placeholder="# Movil"class="txt_per_usu"> 
-                 </div>
-                 <br>
-                 <div>
-                     <input type="datetime" placeholder="fecha de nacimiento"class="txt_per_usu"> 
-                 </div>
-                </div>
-            </form>
+        <article>
+            <fieldset class="DatPers5">
 
-        </main>
+                <legend class="DP5">Perfil De Usuario</legend>
+                <div class="IcoUse5">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                
+                <form class="F_perf_usu">
+                    <button class="BtnDatsP5">DATOS PERSONALES</button>
+                    <button class="BtnD_usu5">DATOS DE USUARIO</button>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="Nombre" class="txt_per_usu5"> 
+                    </div>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="apellido"class="txt_per_usu5"> 
+                    </div>
+                    <br>
+                    <div>
+                        <input type="number" placeholder="# Movil"class="txt_per_usu5"> 
+                    </div>
+                    <br>
+                    <div>
+                        <input type="date" placeholder="fecha de nacimiento"class="txt_per_usu5">
+                    </div>
+                    </div>
+                </form>
+            </fieldset>
+        </article>
+        <br>
         <footer>
-            <div class="frase">
+            <div class="frase5">
                 <h2> I LOVE BARBER    <i class="fa-solid fa-face-grin-hearts icon2"></i></h2>
             </div>
           

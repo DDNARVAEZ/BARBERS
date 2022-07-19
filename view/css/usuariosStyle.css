@@ -2,26 +2,38 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #f1f1f1;
+    background-image:url(fbar.jpg.png);
+    background-position: center;
+    background-size: contain;
+    
 }
-
+/*--------------------------------------------------*/
 /*MOCKUP1------REGISTRO DE USUARIO/datos personales---------*/ 
-.logo{
-    float: inline-start;
+/*--------------------------------------------------*/
+.logo1u{
+    float: left;
     margin-left: 10px;
-    display: block;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
+    
 }
-.logo1{
-    width: 80px;
-    height: 80px;
+.logo1a{
+    width: 150px;
+    height: 150px;
     border-radius: 3px;
     border-color: rgb(63, 160, 240);
     border-style: solid;
+    
 }
-.R_usuar{/*------estilo para el titulo "registro de usuario-------"*/
+.R_usuari{/*------estilo para el titulo "registro de usuario-------"*/
     text-align: center;
     background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -31,70 +43,9 @@ body{
     border: none;
     
 }
-.Boto_usuar{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
-    background: #fff;
-    margin-right: auto;
-    margin-left: 10px;
-    margin-top: 200px;
-    border: 3px solid rgb(63, 160, 240); 
-    border-radius: 3%; 
-    flex-direction: row;
-
-}
-.conte_boto{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
-    position: absolute;
-    padding-left: 10px;
-
-}
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    
-}
-.links a{/*estilo para los botones que se desplegan*/
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 13px;
-
-}
-.links{/*estilo para los botones que se desplegan*/
-    background-color:#ffff;
-    display: none;
-
-}
-.links a:hover{/*estilo para los botones que se desplegan*/
-    background-color: #b8c2ee;
-
-}
 .main1{
-    margin-right: 350px;
+    margin-left: auto;
+    margin-right: 170px;
     
 }
 .Form_datper{ /*estilo para centrar los campos de texto*/
@@ -102,79 +53,90 @@ body{
  
  }
 .DatPers1{/*------estilo para el contenedor "datos personales"*/
-    width: 600px;
-    height: 290px;
+    width: 800px;
+    height: 550px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 90px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
     flex-direction: row;
 
 }
-.Lege_txt1{
-    font-size: 30px;
+.Lege_txto{/*estilo para el titulo datos personales*/
+    font-size: 40px;
     color: rgb(63, 160, 240);
 }
-.DP{/*estilo para el tamaño de letra y color del titulo datos personales*/
+.BotDatPer{/*estilo para los input*/
     text-align: center;
     font-size: 20px;
-    color:rgb(63, 160, 240);
+    width: 70%;
+    height: 50px;  
     
 }
-
-.BotDatPer{/*estilo para centrar los placeholder*/
+.indi{/*estilo para el select(indicativos)*/
+    font-size: 20px;
+    height: 55px;
+    width: 10%;
+}
+.BotDa_Num{/*estilo para el input number*/
+    font-size: 20px;
+    width: 60%;
+    height: 50px;  
     text-align: center;
-
 }
-input[type="text"],/*input text and datetime*/
-input[type="datetime"]{
+.btnCa{/* estilo para el boton cancelar*/
     font-size: 20px;
-    width: 70%;  
-
-}
-.btnC{/* estilo para el boton cancelar*/
-    font-size: 20px;
-    width: 25%;
+    width: 30%;
+    height: 45px;
     background-color:#da0063;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 
 }
-.btnCo{/*estilo para el boton continuar*/
+.btnCon{/*estilo para el boton continuar*/
     font-size: 20px;
-    width: 25%;
+    width: 30%;
     background-color:rgb(63, 160, 240);
     border: none;
     border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
 
 }
-.frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
+.frase1{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
     color:rgb(63, 160, 240);
+    font-size: 25px;
 
 }
-
+/*--------------------------------------------------*/
 /*MOCKUP2------REGISTRO DE USUARIO/datos personales---------*/ 
-
-.logo{
-    float: inline-start;
-    margin-left: 10px;
-    display: block;
-}
+/*--------------------------------------------------*/
 .logo2{
-    width: 80px;
-    height: 80px;
+    float: left;
+    margin-left: 10px;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
+}
+.logoi2{
+    width: 150px;
+    height: 150px;
     border-radius: 3px;
     border-color: rgb(63, 160, 240);
     border-style: solid;
 }
-.R_usuar1{/*------estilo para el titulo "registro de usuario-------"*/
+.R_usuar2{/*------estilo para el titulo "registro de usuario-------"*/
     text-align: center;
     background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -184,135 +146,81 @@ input[type="datetime"]{
     border: none;
     
 }
-.Boto_usuar1{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
-    background: #fff;
-    margin-right: auto;
-    margin-left: none;
-    margin-top: 200px;
-    border: 3px solid rgb(63, 160, 240); 
-    border-radius: 3%; 
-    flex-direction: row;
-
-}
-.conte_boto1{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo1{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
-    position: absolute;
-    padding-left: 10px;
-
-}
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
+.main2{
     
-}
-.links a{/*estilo para los botones que se desplegan*/
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 13px;
-
-}
-.links{/*estilo para los botones que se desplegan*/
-    background-color:#ffff;
-    display: none;
-
-}
-.links a:hover{/*estilo para los botones que se desplegan*/
-    background-color: #b8c2ee;
-
-}
-.main{
-    margin-right: 350px;
+    margin-left: auto;
+    margin-right: 100px;
 }
 .Form_datusu{ /*estilo para centrar los campos de texto*/
     text-align: center;
 }
 .Dat_usu{/*------estilo para el contenedor "datos de usuario"*/
-    width: 600px;
-    height: 310px;
-    margin-left: auto;
+    width: 800px;
+    height: 550px;
+    margin-left: 449px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 70px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
     flex-direction: row;
 }
-.Lege_txt{
-    font-size: 30px;
+.Lege_txt2{
+    font-size: 40px;
     color: rgb(63, 160, 240);
+    text-align: center;
 }
 .Bot_emai{/*estilo para el input de e-mail*/
-    height: 24px;
-    width: 420px;
+    width: 70%;
+    height: 50px; 
     text-align: center;
     font-size: 20px;
 }
 .BotDatUsu{/*estilo para centrar los placeholder*/
     text-align: center;
+    width: 70%;
+    height: 50px; 
+    font-size: 20px;
 
 }
 .btnC{/* estilo para el boton cancelar*/
     font-size: 20px;
-    width: 25%;
+    width: 30%;
+    height: 45px;
     background-color:#da0063;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 
 }
 .btnCo{/*estilo para el boton continuar*/
     font-size: 20px;
-    width: 25%;
+    width: 30%;
     background-color:rgb(63, 160, 240);
     border: none;
     border-radius: 3px;
-
+    height: 45px;
+    cursor: pointer;
 }
-.frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
+.frase2{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
     color:rgb(63, 160, 240);
-
+    font-size: 25px;
 }
-
-
+/*--------------------------------------------------*/
 /*--------MOCKUP 3 PERFIL----------*/
-
-
-
-
-.logo{
-    float:left;
-    margin-left: 10px;
-}
+/*--------------------------------------------------*/
 .logo3{
-    float:left;
-    width: 80px;
-    height: 80px;
+    float: left;
+    margin-left: 10px;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
+}
+.logoi3{
+    width: 150px;
+    height: 150px;
     border-radius: 3px;
     border-color: rgb(63, 160, 240);
     border-style: solid;
@@ -320,8 +228,10 @@ input[type="datetime"]{
 .R_usuar3{/*------estilo para el titulo "registro de usuario-------"*/
     text-align: center;
     background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -329,91 +239,47 @@ input[type="datetime"]{
     margin-top: 40px;
     border-radius: 3%;
     border: none;
-    
 }
-.Boto_usuar3{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
-    background: #fff;
-    margin-left: 2px;
-    margin-top: 200px;
-    border: 3px solid rgb(63, 160, 240); 
-    border-radius: 3%; 
-    
-
-}
-.conte_boto3{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo3{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
+.main3{
     margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
-    position: absolute;
-    padding-left: 10px;
-
-}
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
+    margin-right: 170px;
     
-}
-.links a{/*estilo para los botones que se desplegan*/
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 13px;
-
-}
-.links{/*estilo para los botones que se desplegan*/
-    background-color:#ffff;
-    display: none;
-
-}
-.links a:hover{/*estilo para los botones que se desplegan*/
-    background-color: #b8c2ee;
-
 }
 .FPerf{/*estilo para el contenedor de perfil*/
-    width: 600px;
-    height: 420px;
-    margin-left: auto;
+    width: 800px;
+    height: 550px;
+    margin-left: 449px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 70px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
+    flex-direction: row;
+    
 }
-.Lege_txt1{
-    font-size: 30px;
+.Lege_txt3{
+    font-size: 40px;
     color: rgb(63, 160, 240);
     text-align: center;
 }
+
 .txtfotPe{/*estilo para centrar el texto de foto de perfil*/
+    margin-top: 40px;
     text-align: center;
+    font-size: 30px;
 }
 .IcoUse{/*estilo para centrar el icono de user*/
     text-align: center;
+    
 }
-.ImgPer{
+.img_perf{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border-color:rgb(63, 160, 240); 
+    border-style: solid;
+}
+.ImgPer{/*estilo para la imagen de perfil*/
     float: left;
     margin-left: 10px;
     margin-bottom: 100px;
@@ -421,15 +287,30 @@ input[type="datetime"]{
 }
 .txtFot{/*estilo para el texto subir una foto*/
     margin-left: 30px;
-    font-size: 20px;   
+    font-size: 30px;   
 }
-.icon1{/*estilo para centrar el icono de subir de foto de perfil*/
+.icon3{/*estilo para centrar el icono de subir de foto de perfil*/
     margin-left:85px; 
+}
+
+.fa-circle-arrow-up{/*estilo para el tamaño del icono de subir imagen*/
+    font-size: 80px;
+    cursor: pointer;
+}
+.fa-circle-arrow-up:hover{/*estilo el icono de subir imagen*/
+    color: rgb(63, 160, 240);
+}
+.fa-circle-arrow-up:active{/*estilo el icono de subir imagen*/
+    color: #b8c2ee;
+}
+
+.img3{/*estilo el icono de subir imagen*/
+    display: none;
 }
 .Savatar{/*estilo para el contenedor de seleccoin de avatar*/
     text-align: center;
-    width: 250px;
-    height: 190px;
+    width: 350px;
+    height: 230px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 50px;
@@ -437,47 +318,49 @@ input[type="datetime"]{
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
 }
-.Lege_txt3{
-    font-size: px;
+.Lege_txt3a{/*estilo para el txt de seleccionar avatra*/
+    font-size: 30px;
     color: rgb(63, 160, 240);
     text-align: center;
 }
-.btnCA{/*estilo para centrar los botones cancelar y continuar*/
-    text-align: center;
-}
-.btnC1{/*estilo para el boton cancelar*/
-    text-align: center;
+
+.btnC3{/*estilo para el boton cancelar*/
     font-size: 20px;
-    width: 25%;
-    height: 30px;
+    width: 30%;
+    height: 45px;
     background-color:#da0063;
     border: none;
-    border-radius: 3px;   
+    border-radius: 3px;
+    cursor:pointer;
 }
-.btnCo1{/*estilo para el boton ccontinuar*/
-    text-align: center;
+.btnCo3{/*estilo para el boton ccontinuar*/
     font-size: 20px;
-    width: 25%;
-    height: 30px;
+    width: 30%;
     background-color:rgb(63, 160, 240);
     border: none;
     border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
 }
-.frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
+.frase3{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
     color:rgb(63, 160, 240);
-
+    font-size: 25px;
 }
 /*--------------------------------------------------*/
 /* MOCKUP 4 CONFIRMACION */
 /*--------------------------------------------------*/
-.logo{
+.logo4{
+    float: left;
     margin-left: 10px;
+    border: none;
+    border-color: none;
+    color: none;
+    border-radius: none;
 }
-.logo1{
-    float:left;
-    width: 80px;
-    height: 80px;
+.logo4a{
+    width: 150px;
+    height: 150px;
     border-radius: 3px;
     border-color: rgb(63, 160, 240);
     border-style: solid;
@@ -486,8 +369,10 @@ input[type="datetime"]{
 .R_usuar4{/*------estilo para el titulo "registro de usuario-------"*/
     text-align: center;
     background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
+    font-weight: 100px;
+    font-size: 35px;
+    width: 800px;
+    height: 40px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -497,81 +382,21 @@ input[type="datetime"]{
     border: none;
     
 }
-.Boto_usuar4{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
-    background: #fff;
-    margin-right: auto;
-    margin-left: 80px;
-    margin-top: 200px;
-    border: 3px solid rgb(63, 160, 240); 
-    border-radius: 3%; 
-    flex-direction: row;
 
-}
-.conte_boto4{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo4{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
-    position: absolute;
-    padding-left: 10px;
-
-}
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    
-}
-.links a{/*estilo para los botones que se desplegan*/
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 13px;
-
-}
-.links{/*estilo para los botones que se desplegan*/
-    background-color:#ffff;
-    display: none;
-
-}
-.links a:hover{/*estilo para los botones que se desplegan*/
-    background-color: #b8c2ee;
-
-}
 .Cont_confr{/*estilo para el contenedor de confirmacion*/
-    width: 600px;
-    height: 420px;
-    margin-left: auto;
+    width: 800px;
+    height: 550px;
+    margin-left: 449px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 70px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
+    flex-direction: row;
 }
-.DP{/*estilo para el tamaño de letra y color del titulo confirmacion*/
+.DP4{/*estilo para el tamaño de letra y color del titulo confirmacion*/
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     color:rgb(63, 160, 240);
     
 }
@@ -581,27 +406,28 @@ input[type="datetime"]{
 
 .TyC{
     text-align: center;
+    font-size: 35px;
 }
 .btnCA{/*estilo para centrar los botones cancelar y continuar*/
     text-align: center;
 }
-.btnC1{/*estilo para el boton cancelar*/
-    text-align: center;
+.btnC4{/*estilo para el boton cancelar*/
     font-size: 20px;
-    width: 25%;
-    height: 30px;
+    width: 30%;
+    height: 45px;
     background-color:#da0063;
     border: none;
-    border-radius: 3px;   
+    border-radius: 3px; 
+    cursor: pointer;  
 }
-.btnCo1{/*estilo para el boton ccontinuar*/
-    text-align: center;
+.btnCo4{/*estilo para el boton ccontinuar*/
     font-size: 20px;
-    width: 25%;
-    height: 30px;
+    width: 30%;
     background-color:rgb(63, 160, 240);
     border: none;
     border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
 }
 .TxtRegExi{/*estilo para el texto registro exitoso*/
     color: #c469359c;
@@ -612,88 +438,90 @@ input[type="datetime"]{
     margin-left: 106px;
     margin-bottom: auto;
     background-color: #c469359c;
-    width: 150px;
-    height: 40px;
+    width: 190px;
+    height: 50px;
     font-size: 20px;
     border-radius: 3%;
     border-style: hidden;
+    cursor: pointer;
 }
-.frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
+.frase4{ /*estilo para la frase i love barber*/
+    margin-left: 36cm;
     color:rgb(63, 160, 240);
-
+    font-size: 25px;
 }
-
-
-
+/*--------------------------------------------------*/
 /* MOCKUP 5 PERFIL DE USUARIO */
-
-
-.R_usuar5{/*------estilo para el titulo "registro de usuario-------"*/
-    text-align: center;
-    background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #aaa;
-    margin-top: 40px;
-    border-radius: 3%;
-    border: none;
-    
+/*--------------------------------------------------*/
+.hom{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #414bb2;
+    text-align:center;
+    color: #f1f1f1;
+    margin-top: 3px;
+    cursor: pointer;
+    float: left;   
 }
-.Boto_usuar5{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
+.homE{
+    color: #f1f1f1;
+    text-align: center;
+}
+.hom1{
+    height: 30px;
+    width: 185px;
+    float: left;
+    margin-left: 1360px;
+    background-color: rgb(236, 243, 243);
+    border-radius: 3px;
+    border: 1px solid #000000;
+    text-align: center ;
+}
+.fa-face-smile{
+   margin-left: 10px; 
+   font-size: 38px;
+}
+.Boto_usuar5{/*------estilo para los botones "registro,ver,editar"*/ 
+    width: 190px;
+    height: 230px;
     background: #fff;
     margin-right: auto;
-    margin-left: 80px;
-    margin-top: 200px;
+    margin-left: 130px;
+    margin-top: 250px;
     border: 3px solid rgb(63, 160, 240); 
     border-radius: 3%; 
-    flex-direction: row;
-
-}
-.conte_boto5{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo5{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
 
 }
 .Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
     position: absolute;
     padding-left: 10px;
-
-}
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
+    border-radius: 4px;
 
 }
 .btnDesp{/*estilo para el boton despegable*/
     text-align: 50px;
-    font-weight: 600px;
+    font-weight: bold;
     font-size: 20px;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    
+       
 }
+.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
+    display: block;
+   
+
+}
+
 .links a{/*estilo para los botones que se desplegan*/
     text-decoration: none;
     color: black;
     display: block;
     padding: 13px;
+    border-radius: 6px;
 
 }
 .links{/*estilo para los botones que se desplegan*/
@@ -705,131 +533,135 @@ input[type="datetime"]{
     background-color: #b8c2ee;
 
 }
-.DatPers2{/*------estilo para el formulario Perfil de usuario-------*/
-    
-    width: 600px;
-    height: 400px;
-    margin-left: auto;
+.DatPers5{/*------estilo para el formulario Perfil de usuario-------*/
+    width: 800px;
+    height: 550px;
+    margin-left: 160px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 3cm;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
-    /*min-width: 300px;-------responsive*/
-    flex-direction: row;
-}
-.DP{/*estilo para el tamaño de letra y color del titulo perfil de usuario*/
-    text-align: center;
-    font-size: 20px;
-    color:rgb(63, 160, 240);
+    float: left;
     
 }
-.IcoUse{/*estilo para centrarel icono de user*/
+.DP5{/*estilo para el tamaño de letra y color del titulo perfil de usuario*/
+    font-size: 40px;
+    color: rgb(63, 160, 240);
     text-align: center;
+    
+}
+.IcoUse5{/*estilo para centrarel icono de user*/
+    text-align: center;
+   
+}
+.fa-circle-user{ /*estilo para el tamaño del icono*/
+   font-size: 85px;
 }
 .F_perf_usu{/*estilo para centrar los campos de texto*/
     text-align: center;
 }
-.BtnDatsP1{/*estilo para el boton datos personales*/
+.BtnDatsP5{/*estilo para el boton datos personales*/
     background-color: #414bb2;
-    width: 170px;
-    height: 30px;
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
     border: none;
+    border-radius: 3px; 
+    cursor: pointer;
+    margin-right: 50px;
 }
-.BtnDatsP{/*estilo para el boton datos de usuario*/
-    width: 170px;
-    height: 30px;
-}
-.txt_per_usu{/*estilo para centrar los placeholder*/
-    text-align: center;
-    
-}
-.frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
-    color:rgb(63, 160, 240);
-
-}
-
-
-
-/*MOCKUP 6 EDITAR PERFIL*/
-
-.logo{
-    float:left;
-    margin-left: 10px;
-}
-.logo1{
-    float:left;
-    width: 80px;
-    height: 80px;
+.BtnD_usu5{/*estilo para el boton datos de usuario*/
+    font-size: 20px;
+    width: 30%;
+    border: none;
     border-radius: 3px;
-    border-color: rgb(63, 160, 240);
-    border-style: solid;
+    height: 45px;
+    cursor: pointer;
 }
-.R_usuar5{/*------estilo para el titulo "registro de usuario-------"*/
+.txt_per_usu5{/*estilo para centrar los placeholder*/
     text-align: center;
-    background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #aaa;
-    margin-top: 40px;
-    border-radius: 3%;
-    border: none;
+    width: 70%;
+    height: 50px; 
+    font-size: 20px;
     
 }
-.Boto_usuar5{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
+.frase5{ /*estilo para la frase i love barber*/
+    margin-top: 17cm;
+    color:rgb(63, 160, 240);
+    margin-left: 36cm;
+
+}
+/*--------------------------------------------------*/
+/*MOCKUP 6 EDITAR PERFIL*/
+/*--------------------------------------------------*/
+.hom{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #414bb2;
+    text-align:center;
+    color: #f1f1f1;
+    margin-top: 3px;
+    cursor: pointer;
+    float: left;   
+}
+.homE{
+    color: #f1f1f1;
+    text-align: center;
+}
+.hom1{
+    height: 30px;
+    width: 185px;
+    float: left;
+    margin-left: 1360px;
+    background-color: rgb(236, 243, 243);
+    border-radius: 3px;
+    border: 1px solid #000000;
+    text-align: center ;
+}
+
+.Boto_usuar6{/*------estilo para los botones "registro,ver,editar"*/
+    width: 190px;
+    height: 230px;
     background: #fff;
-    margin-left: none;
-    margin-top: 200px;
+    margin-right: auto;
+    margin-left: 130px;
+    margin-top: 275px;
     border: 3px solid rgb(63, 160, 240); 
     border-radius: 3%; 
-    flex-direction: row;
+    float: left;
 
 }
-.conte_boto5{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo5{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
+.Desplegable6{/*estilo para dar posision y ubicacion al boton desplegable*/
     position: absolute;
     padding-left: 10px;
+    border-radius: 4px;
+    margin-top: 23px;
 
 }
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
+.btnDesp6{/*estilo para el boton despegable*/
     text-align: 50px;
-    font-weight: 600px;
+    font-weight: bold;
     font-size: 20px;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    
+       
 }
+
+.Desplegable6:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
+    display: block;
+
+}
+
 .links a{/*estilo para los botones que se desplegan*/
     text-decoration: none;
     color: black;
     display: block;
     padding: 13px;
+    border-radius: 6px;
 
 }
 .links{/*estilo para los botones que se desplegan*/
@@ -841,120 +673,143 @@ input[type="datetime"]{
     background-color: #b8c2ee;
 
 }
-.Cont_Edit{/*estilo para el contenedor de editar*/
-    width: 600px;
-    height: 420px;
-    margin-left: auto;
+.DatPers6{/*------estilo para el formulario Perfil de usuario-------*/
+    width: 800px;
+    height: 550px;
+    margin-left: 160px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 137px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
-}
-.DP{/*estilo para el tamaño de letra y color del titulo confirmacion*/
-    text-align: center;
-    font-size: 20px;
-    color:rgb(63, 160, 240);
+    float: left;
     
 }
-.IcoUse{/*estilo para centrar el icono de user*/
-    text-align: center;
-}
-.FEditPer{
-    text-align: center;
-}
-.BtnDatsP1{/*estilo para el boton datos personales*/
-    background-color: #414bb2;
-    width: 170px;
-    height: 30px;
-    border: none;
-}
-.BtnDatsP{/*estilo para el boton datos de user*/
-    width: 170px;
-    height: 30px;
-}
-.txt_edit_per{/*estilo para centrar los placeholder*/
-    text-align: center;
 
+.DP6{/*estilo para el tamaño de letra y color del titulo confirmacion*/
+    font-size: 40px;
+    color: rgb(63, 160, 240);
+    text-align: center;
+    
+}
+.IcoUse6{/*estilo para centrar el icono de user*/
+    text-align: center;
+}
+.F_edi_per{/*estilo para centrar los campos de texto*/
+    text-align: center;
+}
+
+.BtnDatsP6{/*estilo para el boton datos personales*/
+    background-color: #414bb2;
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
+    border: none;
+    border-radius: 3px; 
+    cursor: pointer;
+    margin-right: 50px;
+}
+.BtnD_usu6{/*estilo para el boton datos de usuario*/
+    font-size: 20px;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
+}
+.txt_edi_usu6{/*estilo para centrar los placeholder*/
+    text-align: center;
+    width: 70%;
+    height: 50px; 
+    font-size: 20px;
+    
 }
 .btnGuar{/*estilo para el boton guardar cambios*/
     background-color: #8fd14f;
+    font-size: 20px;
     width: 170px;
-    height: 30px;
+    height: 42px;
     border: none;
+    border-radius: 3px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .frase{ /*estilo para la frase i love barber*/
-    margin-left: 80%;
+    margin-top: 18cm;
     color:rgb(63, 160, 240);
-
-}
-
-
-/* MOCKUP 7 ELIMINAR */
-
-
-
-
-.R_usuar6{/*------estilo para el titulo "registro de usuario-------"*/
-    text-align: center;
-    background: rgb(63, 160, 240);
-    font-weight: 600;
-    width: 500px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #aaa;
-    margin-top: 40px;
-    border-radius: 3%;
-    border: none;
+    margin-left: 36cm;
     
+
 }
-.Boto_usuar6{/*------estilo para los botones "registro,ver,editar"*/
-    float:left;
-    width: 250px;
-    height: 470px;
+/*--------------------------------------------------*/
+/* MOCKUP 7 ELIMINAR */
+/*--------------------------------------------------*/
+.hom2{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #414bb2;
+    text-align:center;
+    color: #f1f1f1;
+    margin-top: 3px;
+    cursor: pointer;
+    float: left;   
+}
+.home2{
+    color: #f1f1f1;
+    text-align: center;
+}
+.hom1a{
+    height: 30px;
+    width: 185px;
+    float: left;
+    margin-left: 1360px;
+    background-color: rgb(236, 243, 243);
+    border-radius: 3px;
+    border: 1px solid #000000;
+    text-align: center ;
+}
+
+
+.Boto_usuar7{/*------estilo para los botones "registro,ver,editar"*/
+    width: 190px;
+    height: 230px;
     background: #fff;
     margin-right: auto;
-    margin-left: 80px;
-    margin-top: 200px;
+    margin-left: 130px;
+    margin-top: 275px;
     border: 3px solid rgb(63, 160, 240); 
     border-radius: 3%; 
-    flex-direction: row;
+    float: left;
 
 }
-.conte_boto6{ /*estilo para dar ubicacion a los botones*/
-    padding-left: 10px;
-   
-}
-.Botons_stlo6{/*---------estilo para el tipo de letra, tamaño y ubicacion de los botones*/
-    /*background-color: #da0063; color de los botones*/
-    text-align: 50px;
-    font-weight: 600px;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.Desplegable{/*estilo para dar posision y ubicacion al boton desplegable*/
+.Desplegable7{/*estilo para dar posision y ubicacion al boton desplegable*/
     position: absolute;
     padding-left: 10px;
+    border-radius: 4px;
+    margin-top: 23px;
 
 }
-.Desplegable:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
-    display: block;
-
-}
-.btnDesp{/*estilo para el boton despegable*/
+.btnDesp7{/*estilo para el boton despegable*/
     text-align: 50px;
-    font-weight: 600px;
+    font-weight: bold;
     font-size: 20px;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    
+       
+}
+
+.Desplegable7:hover .links{/*estilo para dar ubicacion a los links del boton desplegable*/
+    display: block;
+
+}
+ 
+.Desplegable7{/*estilo para dar posision y ubicacion al boton desplegable*/
+    position: absolute;
+    padding-left: 10px;
+
 }
 .links a{/*estilo para los botones que se desplegan*/
     text-decoration: none;
@@ -973,44 +828,65 @@ input[type="datetime"]{
 
 }
 .cont_elim{/*estilo para el contenedor de eliminacion*/
-    width: 600px;
-    height: 420px;
-    margin-left: auto;
+    width: 800px;
+    height: 550px;
+    margin-left: 160px;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 137px;
     background-color: azure;
     border: 3px solid rgb(63, 160, 240);
     border-radius: 3%;
+    float: left;
 
 }
-.DP{/*estilo para el tamaño de letra y color del titulo eliminar*/
+.DP7{/*estilo para el tamaño de letra y color del titulo confirmacion*/
+    font-size: 40px;
+    color: rgb(63, 160, 240);
     text-align: center;
-    font-size: 20px;
-    color:rgb(63, 160, 240);
     
 }
-.IcoUse{/*estilo para centrar el icono de user*/
+.IcoUse7{/*estilo para centrar el icono de user*/
     text-align: center;
+}
+.name-{
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color: #943636;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:3px;
 }
 .cont_Elimi_usu{
     text-align: center;
 }
 .BtnDatsP1{/*estilo para el boton elimiar user*/
     background-color: #414bb2;
-    width: 170px;
-    height: 30px;
+    font-size: 20px;
+    width: 30%;
+    height: 45px;
     border: none;
+    border-radius: 3px; 
+    cursor: pointer;
+    margin-right: 50px;
 }
 .BtnDatsP{/*estilo para el boton inhabilitar user*/
-    width: 170px;
-    height: 30px;
+    font-size: 20px;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
 }
 
 .btnCanc{
     background-color: #da0063;
+    font-size: 20px;
+    width: 30%;
     border: none;
-    width: 170px;
-    height: 30px;
+    border-radius: 3px;
+    height: 45px;
+    cursor: pointer;
 }
 .frase{ /*estilo para la frase i love barber*/
     margin-left: 80%;

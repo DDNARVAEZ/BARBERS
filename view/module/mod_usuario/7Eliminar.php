@@ -11,65 +11,59 @@
     </head>
     <body>
         <header>
-            <div class="R_usuar6">REGISTRO DE USUARIOS</div> 
+            <div class="hom2">
+                <a class="home2" href="view/module/home.usuario.php" ><b>HOME</b> l</a>
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="hom1a">
+                <b>nombre de usuario</b>  
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+            </div> 
         </header>
-        <nav class="Boto_usuar6"> 
-            <br>
-            <div class="conte_boto6">
-                <button class="Botons_stlo6" >
-                    Registro De Usuario
-                </button>
-            </div>
-            <br>
-            <div class="conte_boto6">
-                <button class="Botons_stlo6">Ver Usuario
-                    <a href=""></a> </button>
-            </div>
-            <br>
-            <div class="conte_boto6">
-                <button class="Botons_stlo6">Editar Usuario</button>
-            </div>
-            <br>
-            <div class="conte_boto6">
-                <button class="Botons_stlo6">Eliminar o Inhabilitar</button>
-            </div>
-            <br>
-            <div class="Desplegable">
-                <button class="btnDesp">Boton Despegable</button>
+        <nav class="Boto_usuar7"> 
+            
+            <div class="Desplegable7">
+                <button class="btnDesp7">Usuario</button>
                 <div class="links">
-                    <a href="citas">Citas</a>
-                    <a href="Barberos">Barberos</a>
-                    <a href="Agenda">Agenda</a>
-                    <a href="Inicio De Sesion">Inicio De Sesion</a>
+                    <a href="5perfilUsuario.html">Ver usuario</a>
+                    <a href="6EditPerfil.html">Editar Usuario</a>
+                    <a href="7Eliminar.html">Eliminar Usuario</a>
                 </div>
             </div>
         </nav>
-        <main class="cont_elim">
-            <div class="DP">
-                <h2>Eliminar-Inhabilitar Usuario</h2>
-            </div>
-            <div class="IcoUse">
-                <i class="fa-solid fa-circle-user"></i>
-            </div>
-            <br>
-            <br>
-            <form class="cont_Elimi_usu">
+        <article>
+            <fieldset class="cont_elim">
+                <legend class="DP7">Eliminar o inhabilitar</legend>
                 <br>
-                <br>
-                <button onclick='resultado()' class="BtnDatsP1" >Eliminar Usuario</button>
-                <button onclick='resultado1()' class="BtnDatsP">Inhabilitar Usuario</button>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div>
-                 <div>
-                    <button class="btnCanc" type="submit">Cancelar</button>
-                 </div>
+                <div class="IcoUse7">
+                    <i class="fa-solid fa-circle-user"></i>
                 </div>
-            </form>
-
-        </main>
+                <div class="name-">
+                    <p >Nombres-Apellidos del usuario</p> 
+                </div>
+                <form class="cont_Elimi_usu">
+                    <br>
+                    <br>
+                    <br>
+                    <button onclick='resultado()' class="BtnDatsP1" >Eliminar Usuario</button>
+                    <button onclick='resultado1()' class="BtnDatsP">Inhabilitar Usuario</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                    <br>
+                    <div>
+                        <button class="btnCanc" type="submit">Cancelar</button>
+                    </div>
+                </form>
+            
+            
+            </fieldset>
+        </article>
+    
         <footer>
             <div class="frase">
                 <h2> I LOVE BARBER    <i class="fa-solid fa-face-grin-hearts icon2"></i></h2>
@@ -78,7 +72,7 @@
         </footer>
             
         
-        <script type="text/javascript" src="funciones.js"></script>
+        <script type="text/javascript" src="F_Mod_Usu.js"></script>
     </body>
     
 </html>

@@ -11,70 +11,50 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img  class="logo1" src="logo.jpg">
+            <div class="logo1u">
+                <img  class="logo1a" src="logo.jpg">
             </div>
-            <div class="R_usuar">REGISTRO DE USUARIOS</div> 
+            <div class="R_usuari">REGISTRO DE USUARIOS</div> 
         </header>
-        <nav class="Boto_usuar"> 
-            <br>
-            <div class="conte_boto">
-                <button class="Botons_stlo" >
-                    Registro De Usuario
-                </button>
-            </div>
-            <br>
-            <div class="conte_boto">
-                <button class="Botons_stlo">Ver Usuario
-                    <a href=""></a> </button>
-            </div>
-            <br>
-            <div class="conte_boto">
-                <button class="Botons_stlo">Editar Usuario</button>
-            </div>
-            <br>
-            <div class="conte_boto">
-                <button class="Botons_stlo">Eliminar o Inhabilitar</button>
-            </div>
-            <br>
-            <div class="Desplegable">
-                <button class="btnDesp">Boton Desplegable</button>
-                <div class="links">
-                    <a href="#">Citas</a>
-                    <a href="#">Barberos</a>
-                    <a href="#">Agenda</a>
-                    <a href="#">Inicio De Sesion</a>
-                </div>
-            </div>
-        </nav>
         <main class="main1">
             <form class="Form_datper">
                 <fieldset class="DatPers1">
-                    <legend class="Lege_txt1">Datos Personales</legend>
+                    <legend class="Lege_txto">Datos Personales</legend>
                     <div>
-                    <input type="text" placeholder="Nombre" class="BotDatPer"> 
+                    <br>
+                    <input type="text" placeholder="Nombre" class="BotDatPer" required> 
                     </div>
                     <br>
-                    <div>
-                        <input type="text" placeholder="apellido"class="BotDatPer"> 
-                    </div>
                     <br>
                     <div>
-                        <input type="text" placeholder="# Movil"class="BotDatPer"> 
+                        <input type="text" placeholder="apellido"class="BotDatPer" required> 
                     </div>
+                    <br>
                     <br>
                     <div>
-                        <input type="datetime" placeholder="fecha de nacimiento"class="BotDatPer"> 
+                        <select name="indicativos" class="indi">
+                            <option value="colombia">+57</option>
+                            <option value="argentina">+54</option>
+                            <option value="peru">+51</option>
+                            <option value="Bolivia">+591</option>
+                        </select><input type="number" placeholder="# Movil"class="BotDa_Num" required> 
                     </div>
                     <br>
-                    <button type="reset" class="btnC">Cancelar</button>
-                    <button class="btnCo">Continuar</button>
+                    <br>
+                    <div>
+                        <input type="date" placeholder="fecha de nacimiento"class="BotDatPer" required>
+                        <br>
+                        *Fecha de Nacimiento 
+                    </div>
+                    <br>
+                    <button type="reset" class="btnCa">Cancelar</button>
+                    <button class="btnCon">Continuar</button>
                 </fieldset>
             </form>
 
         </main>
         <footer>
-            <div class="frase">
+            <div class="frase1">
                 <h2> I LOVE BARBER    <i class="fa-solid fa-face-grin-hearts icon2"></i></h2>
             </div>
           
