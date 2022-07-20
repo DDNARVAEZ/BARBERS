@@ -47,7 +47,7 @@
     ?>
 
     <div class="frase">
-        I LOVE BARBER <i class="fa-solid fa-face-grin-hearts icon2"></i>
+        I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER 
     </div>
 </body>
 </html>

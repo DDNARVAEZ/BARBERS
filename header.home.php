@@ -6,7 +6,7 @@
 <body>
 <div class="hom">
 <headers class="homl>
-    <a href="view/module/login.php" ><b>HOME</b> l</a>
+    <a href="view/module/home.usuario.php" ><b>HOME</b> l</a>
     <i class="fa-solid fa-house"></i>
 </headers>  
 </div>

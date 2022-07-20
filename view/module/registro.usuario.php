@@ -27,7 +27,7 @@
             </div>
             <input type="submit" value="Registrate" class="btn">
             <p>hola mundo</p>
-            <p>¿Ya estas Registrado?<a class="link" href="login.php">Iniciar Sesion</a></p>
+            <p>¿Ya estas Registrado?<a class="link" href="../../index.php">Iniciar Sesion</a></p>
 
 
         </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-06-2022 a las 01:00:56
+-- Tiempo de generación: 20-07-2022 a las 03:36:27
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -253,8 +253,17 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `NUM_CELULAR` int(10) DEFAULT NULL,
   `DIRECCION` varchar(30) DEFAULT NULL,
   `F_NACIMIENTO` date DEFAULT NULL,
+  `EMAIL` varchar(30) DEFAULT NULL,
+  `CONTRASENA` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`ID_USUARIO`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`ID_USUARIO`, `NOMBRE`, `NUM_CELULAR`, `DIRECCION`, `F_NACIMIENTO`, `EMAIL`, `CONTRASENA`) VALUES
+(1, 'RICHARD LOPEZ', 2147483647, 'AV HILTON', '0000-00-00', 'BARBERS@GMAIL.COM', '123');
 
 --
 -- Restricciones para tablas volcadas
