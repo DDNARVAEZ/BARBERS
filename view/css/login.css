@@ -24,6 +24,7 @@ body {
  .input-contenedor{
   margin-bottom: 15px;
   border: 1px solid #aaa;
+  outline: none;
 }
 
 /*FORMULARIO*/

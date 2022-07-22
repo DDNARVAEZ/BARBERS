@@ -4,7 +4,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: url(../img/imagen1.jpg);
+    background: white;
     background-position-x: center;
     background-size:cover;
     background-attachment:initial;
@@ -16,21 +16,31 @@ body {
   
   /*CONTENEDORES*/
   .contenedor{
-    width: 100%;
-    padding: 50px;
+    width: 50%;
+    height: 50%;
+    padding: 150px;
+    margin-left: 25%;
+    margin-top: 5%;
+    color: rgb(75, 73, 69);
+    border: solid 4px;
+    border-radius: 5px;
+  
   }
   
   .input-contenedor{
     margin-bottom: 15px;
     border: 1px solid #aaa;
+    width: 100%;
+    
   }
   
   /*FORMULARIO*/
   
   .formulario{
-    background: #fff;
-    margin-top: 150%;
-    padding: 3px;
+    background: white;
+    
+    
+
   }
   
   @media(min-width:768px)
@@ -38,7 +48,7 @@ body {
     .formulario{
       margin: auto;
       width: 500px;
-      margin-top: 150px;
+      
       border-radius: 2%;
     }
   }
@@ -49,7 +59,9 @@ body {
     color: #1a2537;
     font-size: 40px;
   }
-  
+  .legenda{
+    text-align: center;
+  }
   /*ENTRADAS*/
   input[type="text"], 
   input[type="password"]{
@@ -82,15 +94,18 @@ body {
     
     display: inline-block;
     border: none;
-    width: 100%;
+    width: 80%;
     color: white;
     font-size: 20px;
-    background: rgb(72, 228, 98, 0.76);
+    background: rgba(57, 7, 114, 0.753);
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration-color: transparent;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+    
     
   }
   .btn:hover{
@@ -101,15 +116,17 @@ body {
     
     display: inline-block;
     border: none;
-    width: 100%;
+    width: 80%;
     color: white;
     font-size: 20px;
-    background: #999ea7;
+    background: rgb(63, 160, 240);
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration-color: transparent;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+
     
     
     
@@ -148,23 +165,29 @@ body {
   }
   
   /*FRACES*/
-  .bienvenido{
-    text-align: center;
-    background: rgb(63, 160, 240);
-    width: 200px;
-    padding: 10px;
-    margin-left: 150px;
-    border: 1px solid #aaa;
-    margin-top: 40px;
-    border-radius: 3%;
-    border: none;
-    
-  }
-  .frase{
-    margin-left: 1100px;
-    font-size: 45px;
-    color: rgb(72, 228, 98, 0.76);
   
+  .frase{
+    position: relative;
+    margin-left:  85%;
+    margin-bottom: 90%;
+    
+    font-size: 45px;
+    color: rgb(63, 160, 240);
+  
+  }
+
+  .titulo{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: rgb(63, 160, 240);
+    width: 40%;
+    padding: 5px;
+    margin-left: 570px;
+    border: 1px solid #aaa;
+    margin-top: 50px;
+    border-radius: 2%;
+    border: none;
   }
   
   
