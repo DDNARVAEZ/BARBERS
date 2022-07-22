@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>5Usuarios</title>
         <!-- CSS only -->
-        <link rel="stylesheet" href="usuariosStyle.css">
+        <link rel="stylesheet" href="../../../view/css/usuariosStyle.css">
         <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -29,9 +29,9 @@
             <div class="Desplegable">
                 <button class="btnDesp">Usuario</button>
                 <div class="links">
-                    <a href="5perfilUsuario.html">Ver usuario</a>
-                    <a href="6EditPerfil.html">Editar Usuario</a>
-                    <a href="7Eliminar.html">Eliminar Usuario</a>
+                    <a href="perfilUsuario.php">Ver usuario</a>
+                    <a href="EditPerfil.php">Editar Usuario</a>
+                    <a href="Eliminar.php">Eliminar Usuario</a>
                 </div>
             </div>
             <br>

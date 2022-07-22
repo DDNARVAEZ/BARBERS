@@ -27,3 +27,17 @@ function resultado1(){
     leer_img.readAsDataURL(event.target.files[0]);
 }
 
+
+
+
+const img_perf = document.querySelector('.img_perf')
+const imgns = document.querySelectorAll('.imgns')
+
+imgns.forEach(imge =>{
+    imge.addEventListener('click',function(){
+        const active = document.querySelector('.active')
+        active.classList.remove('active')
+        img_perf.src = this.src
+    })
+})
+                                                                                                                                                                                                            
