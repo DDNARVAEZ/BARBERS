@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,30 +10,44 @@
     <link rel="stylesheet" href="view/css/login.css">
 </head>
 <body>
+<!-- FORMULARIO INICIO DE SESION-->
     
-    <form class="formulario">
+    <form method="post" class="formulario">
         <div class="bienvenido">¡Bienvenido!</div>
+        <i class="fa-solid fa-circle-user icon3"></i>
+<!-- INICIA EL CONTENEDOR-->
         <div class="contenedor">
         
-            <div class="input-contenedor">
-                <i class="fa-solid fa-message icon"></i>
-                <input type="text" placeholder="Correo Electronico">
+            <div class="input-contenedor">             
+                <input type="text" name="txtUser" placeholder="Ingresar E-mail">
             </div>
             <div class="input-contenedor">
-                <i class="fa-solid fa-lock icon"></i>
-                <input type="password" placeholder="Contraseña">
+                <input type="password" name="txtPass" placeholder="Ingresar Contraseña">
             </div>
-            
-            <input type="submit" value="Login" class="button">
-            <input type="submit" value="Registrar Cuenta" class="button" href="registro.usuario.php">
-            <p>Al registrarte, aceptas nuestras condicones de uso y politicas de privacidad</p>
-            <p>¿No tienes una cuenta?<a class="link" href="registro.usuario.php">Registrate</a></p>
-          
 
+            
+<!-- ENLACES -->
+            <a class="link" href="view/module/recordar.clave.php">Recordar Contraseña</a><br/>
+            <a class="link2" href="">Cambiar Contraseña</a>
+<!-- BOTONES-->        
+            <input class="btn" type="submit" value="Iniciar Sesion">
+            <a href="view/module/?"><input class="btn2" type="button" value="Registrar Cuenta"></a>
         </div>
+            
     </form>
+    <!--CONTRALADOR CONEXION -->
+    <?php
+    if (isset($_POST["txtUser"])){
+        $user = $_POST["txtUser"];
+        $pass = $_POST["txtPass"];
+        $objCon = new ConexionController();
+        $objCon -> ctrLogin($user, $pass);
+    }
+
+    ?>
+
     <div class="frase">
-        I LOVE BARBER <i class="fa-solid fa-face-grin-hearts icon2"></i>
+        I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER 
     </div>
 </body>
 </html>

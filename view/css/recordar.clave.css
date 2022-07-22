@@ -1,0 +1,194 @@
+
+/*CUERPO*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: white;
+    background-position-x: center;
+    background-size:cover;
+    background-attachment:initial;
+  }
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  /*CONTENEDORES*/
+  .contenedor{
+    width: 50%;
+    height: 50%;
+    padding: 150px;
+    margin-left: 25%;
+    margin-top: 5%;
+    color: rgb(75, 73, 69);
+    border: solid 4px;
+    border-radius: 5px;
+  
+  }
+  
+  .input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    width: 100%;
+    
+  }
+  
+  /*FORMULARIO*/
+  
+  .formulario{
+    background: white;
+    
+    
+
+  }
+  
+  @media(min-width:768px)
+  {
+    .formulario{
+      margin: auto;
+      width: 500px;
+      
+      border-radius: 2%;
+    }
+  }
+  
+  /*H1*/
+  h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+  }
+  .legenda{
+    text-align: center;
+  }
+  /*ENTRADAS*/
+  input[type="text"], 
+  input[type="password"]{
+    font-size:  20px;
+    width: 82%;
+    padding: 10px;
+    border:none;
+  }
+  
+  /*ICONOS*/
+  .icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+  }
+  
+  .icon2{
+    color: rgb(255, 0, 85);
+  }
+  
+  .icon3{
+    color: rgb(72, 228, 98, 0.76);
+    font-size: 60px;
+    margin-left: 220px;
+    margin-top: 40px;
+  }
+  
+  /*BOTONES*/
+  .btn{
+    
+    display: inline-block;
+    border: none;
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    background: rgba(57, 7, 114, 0.753);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration-color: transparent;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+    
+    
+  }
+  .btn:hover{
+    background: cadetblue;
+  }
+  
+  .btn2{
+    
+    display: inline-block;
+    border: none;
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    background: rgb(63, 160, 240);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration-color: transparent;
+    margin-top: 30px;
+    margin-left: 50px;
+
+    
+    
+    
+  }
+  .btn2:hover{
+    background: cadetblue;
+  }
+  
+  
+  /*PARRAFOS*/
+  p{
+    text-align: center;
+  
+  /*ENLACES*/
+  
+  }
+  .link{
+    text-decoration: none;
+    color: #16f0a7;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  .link:hover{
+    color: cadetblue;
+  
+  
+  }
+  .link2{
+    text-decoration: none;
+    color: #e63b51;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  .link2:hover{
+    color: cadetblue;
+  }
+  
+  /*FRACES*/
+  
+  .frase{
+    position: relative;
+    margin-left:  85%;
+    margin-bottom: 90%;
+    
+    font-size: 45px;
+    color: rgb(63, 160, 240);
+  
+  }
+
+  .titulo{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: rgb(63, 160, 240);
+    width: 40%;
+    padding: 5px;
+    margin-left: 570px;
+    border: 1px solid #aaa;
+    margin-top: 50px;
+    border-radius: 2%;
+    border: none;
+  }
+  
+  
+  
