@@ -8,6 +8,7 @@
     <title>login</title>
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/css/login.css">
+    
 </head>
 <body>
 <!-- FORMULARIO INICIO DE SESION-->
