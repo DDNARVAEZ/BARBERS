@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/modulo.usuario.css">
+    <link rel="stylesheet" href="../css/modulo.barbero.css">
     
     
 
@@ -34,9 +34,8 @@
 </div>
 
 <div class="col">
-    <h1 class = "titulo">Usuario</h1>
+    <h1 class = "titulo">Citas</h1>
 <div class="nav" id="tab" role="tablist" aria-orientation="vertical">
-
 
 
 
@@ -48,13 +47,60 @@
 <i class="fa-solid fa-trash-can"></i><br> Eliminar
 </a>
 
-
-
-
-
-
 </div>
 </div>
+
+
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">¡Citas!</h3>
+</div>
+
+<div class="card-body">
+<form>
+<div class="form-group">
+<label for="exampleInputEmail1">Nombre</label>
+<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+
+
+<label for="exampleInputPassword1">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+<div class="form-group2">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+
+
+<label for="exampleInputPassword1">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+
+
+
+<div class="card-footer">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

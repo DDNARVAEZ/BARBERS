@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home.usuario</title>
-    <link rel="stylesheet" href="view/css/home.usuario.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="view/css/home.usuario.css">
     
     
     
@@ -17,12 +17,23 @@
 
 <!-- contenedores -->
     <div class="contenedor1">
-        <img src="view/img/logo.jpg" alt="logo" width= "100" heigth= 200>
+        <img src="../img/logo.jpg" alt="logo" width= "100" heigth= 200>
         <div class="contenedor2">
         <i class="fa-solid fa-circle-user icon" ></i> 
+    </div>
+
+        <div class="users">
+            <div class="imags">
+            <img src="../img/colombia.png" class="img-circs"  alt="imgUser">
+            </div>
+            <div class="infos">
+            <a href="#" class="name">Nombre de usuario</a>
+            </div>
         </div>
         
     </div>
+
+
 
     
       <!-- cerrar sesion -->  
@@ -51,7 +62,7 @@
     
     <a href=""><button type="button" class="btn-mod-user"><i class="fa fa-bell"></i> Usuarios</button></a>
     
-    <a href=""><button type="button" class="btn-mod-citas"><i class="fa-solid fa-clock"></i> Citas </button></a>
+    <a href="view/module/modulo.citas.php"><button type="button" class="btn-mod-citas"><i class="fa-solid fa-clock"></i> Citas </button></a>
    
 
     <!-- <div class="frase">
