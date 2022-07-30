@@ -39,7 +39,7 @@
     <h1 class = "titulo">Citas</h1>
 <div class="nav" id="tab" role="tablist" aria-orientation="vertical">
 
-<a class="btn btn-app">
+<a class="btn btn-app" type="submit" onClick="validar(event);">
 <i class="fa-solid fa-calendar-days"></i><br> Solicitar 
 </a>
 
@@ -55,6 +55,7 @@
 <i class="fa-solid fa-clipboard-list"></i><br> Listar
 </a>
 
+
 </div>
 </div>
 
@@ -65,27 +66,34 @@
 </div>
 
 <div class="card-body">
-<form>
+<form method="post">
 <div class="form-group">
 <label for="exampleInputEmail1">Nombre</label>
-<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese nombre">
+<input type="text" class="form-control" id="txtnombre" name="txtnombre" placeholder="Ingrese nombre">
 
 
 
 <label for="exampleInputPassword1">Servicio adicional</label>
-<select name="servicio" class="form-control" id="exampleInputPassword1">
+<select name="servicio" class="form-control" id="txtservicio" name="txtservicio" required>
     <option value="">Agregar servicio</option>
-    <option value="">Barba</option>
-    <option value="">Mascarilla</option>
+    <?php
+    require_once "controller/cita.controller.php";
+    $objCtrOpcion = new ControllerCita();
+    $listaServicios = $objCtrOpcion->ctrServicio();
 
+    foreach($listaServicios as $list){
+        echo '<option value="'.$list["ID_SERVICIO"].'">'.$list["DESCRIPCION"].'</option>';
+    }
+
+    ?>   
 </select>
 
 
+
 <label for="exampleInputPassword1">Barberia</label>
-<select name="servicio" class="form-control" id="exampleInputPassword1">
+<select name="servicio" class="form-control" id="txtbarberia" name="txtbarberia">
     <option value="">Seleccionar Barberia</option>
     <option value="">BarberShop</option>
-    <option value="">NewyorkInc</option>
 </select>
 
 
@@ -93,16 +101,16 @@
 
 <div class="form-group2">
 <label for="exampleInputEmail1">fecha</label>
-<input type="date" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+<input type="date" class="form-control" id="datefecha" name="datefecha" placeholder="Enter email">
 
 
 
 <label for="exampleInputPassword1">hora</label>
-<input type="time" class="form-control" id="exampleInputPassword1" placeholder="Password">
+<input type="time" class="form-control" id="timehora" name="timehora" placeholder="Password">
 
 
 <label for="exampleInputPassword1">Barbero</label>
-<select name="servicio" class="form-control" id="exampleInputPassword1">
+<select name="servicio" class="form-control" id="txtbarbero" name="txtbarbero">
     <option value="">Seleccionar Barbero</option>
     <option value="">Billy</option>
     <option value="">Will</option>
@@ -115,11 +123,16 @@
 
 
 <div class="card-footer">
-<h1>Diligenciar todos los campos</h1>
+<h1>*Diligenciar todos los campos.</h1>
 </div>
 
 
 </form>
+
+<?php
+if (isset($_POST["txtnombre"]))
+
+?>
 
 </div>
 

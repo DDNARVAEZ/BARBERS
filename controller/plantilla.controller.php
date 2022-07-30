@@ -8,11 +8,19 @@
                 include_once "view/module/home.usuario.php";
 
             }else{
-                include_once "view/module/login.php";
+                if (isset ($_GET["ruta"]) && $_GET["ruta"]=="registrar"){
+                    include_once "view/module/Form_Usua.php";
+                }else{
+                    include_once "view/module/login.php";
+
+                }
             }
             
             
         }
     }
+
+
+
     
 ?>

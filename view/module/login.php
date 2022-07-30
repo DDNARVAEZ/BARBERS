@@ -8,6 +8,8 @@
     <title>login</title>
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/css/login.css">
+    <link rel="stylesheet" href="view/css/sweetalert2.min.css">
+    <script src="view/js/sweetalert2.all.min.js"></script>
     
 </head>
 <body>
@@ -32,7 +34,7 @@
             <a class="link2" href="">Cambiar Contraseña</a>
 <!-- BOTONES-->        
             <input class="btn" type="submit" value="Iniciar Sesion">
-            <a href="view/module/?"><input class="btn2" type="button" value="Registrar Cuenta"></a>
+            <a href="view/module/registro.usuario.php?"><input class="btn2" type="button" value="Registrar Cuenta"></a>
         </div>
             
     </form>
@@ -43,12 +45,43 @@
         $pass = $_POST["txtPass"];
         $objCon = new ConexionController();
         $objCon -> ctrLogin($user, $pass);
+
     }
+
+    echo "<script>
+        let timerInterval
+        Swal.fire({
+        title: 'Bienvenido a Barbes!',
+        html: 'Iniciaremos en <b></b> milliseconds.',
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+        });
+                       
+        </script>";
 
     ?>
 
     <div class="frase">
         I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER 
     </div>
+    
+
+    
+    
 </body>
 </html>
