@@ -1,6 +1,6 @@
 <?php
     class ControllerRegistro{
-        public function ctrInsertarUsuario($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena,){
+        public function ctrInsertarUsuario($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena){
             try {
                 $objDtoregistro = new RegistroUsu ($cedula, $nombre, $apellido, $num_celular, $f_nacimiento, $email, $contrasena );
                 $objDaoregistro = new ModelRegistro ( $objDtoregistro );
@@ -24,16 +24,19 @@
         }//FIN DEL CONTROLLER INSERTAR
  
         public function ctrVerUsuario(){
+           
             $array = false;
             try {
-                $objDtoregistro = new RegistroUsu (null, null, null, null, null, null, null );
-                $objDaoregistro = new ModelRegistro ( $objDtoregistro );
-                $array =$objDaoregistro -> mdlVerUsuario() -> fetchAll();
+                $objDtoRegistro = new RegistroUsu (null, null, null, null, null, null, null );
+                $objDaoRegistro = new ModelRegistro ( $objDtoRegistro );
+                $array =$objDaoRegistro -> mdlVerUsuario() -> fetchAll();
+               
                
             } catch (PDOException $e) {
                 echo"error en el controlador" .$e ->getMessage();
             }
             return $array;
+           
         }
  
     }
@@ -42,4 +45,4 @@
  
  
 ?>
-
+ 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="../../view/css/registro.usuario.css">
+    <link rel="stylesheet" href="../../view/css/usuariosStyle.css">
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
    
     <link rel="stylesheet" href="view/css/sweetalert2.min.css">
@@ -28,12 +28,12 @@
                 <legend class="Lege_txto">Datos Personales</legend>
                 <div>
                     <br>
-                    <input type="text" name="txtnombre" placeholder="Nombres" class="BotDatPer" required>
+                    <input type="text" id="txtnombre" name="txtnombre" placeholder="Nombres" class="BotDatPer" required>
                 </div>
                 <br>
                 <br>
                 <div>
-                    <input type="text" name="txtapellido" placeholder="Apellidos" class="BotDatPer" required>
+                    <input type="text" id="txtapellido" name="txtapellido" placeholder="Apellidos" class="BotDatPer" required>
                 </div>
                 <br>
                 <br>
@@ -81,7 +81,6 @@
                 <div class="b">
                     <button type="submit" class="btnCo4" onclick="validar(event);">Guardar</button>
                 </div>
-                <a href="../../index.php"><button type="button" class="btn2"><i class="fa-solid fa-circle-user"></i> Iniciar Sesion </button></a>
                 <br>
             </fieldset>
         </form>
@@ -100,9 +99,7 @@
         }
  
         ?>
-
-
-        
+        <script src=../js/crud.js "></script>
     </body>
 </html>
-
+ 

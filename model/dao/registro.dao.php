@@ -46,7 +46,7 @@
         }//FIN INSERTAR PRODUCTO
        
         public function mdlVerUsuario(){
-            $sql = "CALL SpVerUsuario();";
+            $sql = "CALL `SpVerUsuario`()";
             $resultset = false;
             try {
                 $con = new Conexion();
@@ -55,8 +55,10 @@
                 $resultset = $stmt;
                
             } catch (PDOException $e) {
-                echo"error al ver el registro";
-            } return $resultset;
+                echo"error al ver el registro" . $e -> getMessage();
+            }
+            return $resultset;
+            var_dump($stmt);
         }
        
        

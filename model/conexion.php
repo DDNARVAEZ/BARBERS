@@ -8,7 +8,7 @@
         private $url;
         private $charSet;
         private $con;
-
+ 
         /* CREAMOS EL CONSTRUCTOR */
         public function __construct(){
             $this -> host = "localhost";
@@ -20,15 +20,15 @@
             $this -> charSet = "UTF8";
             $this -> con=NULL;
         }//fin cosntructor
-
+ 
         public function conexion(){
             try{
-                
+               
                 $this -> con = new PDO($this->url, $this->usuario, $this->clave);
-            
-                $this -> con ->	setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, 	PDO::FETCH_ASSOC);
+           
+                $this -> con -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,  PDO::FETCH_ASSOC);
                 $this -> con -> exec('SET CHARACTER SET '.$this->charSet);
-                
+               
             }catch(PDOException $e){
                 echo "Error al conectarme".$e->getMessage();
             }
@@ -37,7 +37,7 @@
         public function __destruct(){
             $this -> con = NULL;
         }
-
+ 
     }//FIN CLASE
     /*try {
         $c = new Conexion();
@@ -48,3 +48,4 @@
         echo "Error";
     }*/
 ?>
+ 

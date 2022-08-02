@@ -9,7 +9,7 @@ class RegistroUsu{
     private $contrasena;
    
  
-    public function __construct($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena,){  
+    public function __construct($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena){  
        
         $this->cedula       = $cedula;
         $this->nombre       = $nombre;

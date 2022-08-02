@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/modulo.citas.css">
+    <link rel="stylesheet" href="view/css/modulo.citas.css">
     
     
 
@@ -19,7 +19,7 @@
 <header class="header">
     <nav class="nav">
         
-        <a href="../../view/module/home.usuario.php"><button type="button" class="btn-home">HOME <i class="fa-solid fa-house-user"></i></i></button></a>
+        <a href="index.php?ruta=citas"><button type="button" class="btn-home">HOME <i class="fa-solid fa-house-user"></i></i></button></a>
 
     </nav>
 </header>

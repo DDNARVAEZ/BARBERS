@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,35 +8,33 @@
     <title>login</title>
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/css/login.css">
-    <link rel="stylesheet" href="view/css/sweetalert2.min.css">
-    <script src="view/js/sweetalert2.all.min.js"></script>
-    
+   
 </head>
 <body>
 <!-- FORMULARIO INICIO DE SESION-->
-    
+   
     <form method="post" class="formulario">
         <div class="bienvenido">¡Bienvenido!</div>
         <i class="fa-solid fa-circle-user icon3"></i>
 <!-- INICIA EL CONTENEDOR-->
         <div class="contenedor">
-        
-            <div class="input-contenedor">             
+       
+            <div class="input-contenedor">            
                 <input type="text" name="txtUser" placeholder="Ingresar E-mail">
             </div>
             <div class="input-contenedor">
                 <input type="password" name="txtPass" placeholder="Ingresar Contraseña">
             </div>
-
-            
+ 
+           
 <!-- ENLACES -->
             <a class="link" href="view/module/recordar.clave.php">Recordar Contraseña</a><br/>
             <a class="link2" href="">Cambiar Contraseña</a>
 <!-- BOTONES-->        
             <input class="btn" type="submit" value="Iniciar Sesion">
-            <a href="view/module/registro.usuario.php?"><input class="btn2" type="button" value="Registrar Cuenta"></a>
+            <input href="index.php?ruta=registrar"class="btn2" type="button" value="Registrar Cuenta">
         </div>
-            
+           
     </form>
     <!--CONTRALADOR CONEXION -->
     <?php
@@ -45,43 +43,14 @@
         $pass = $_POST["txtPass"];
         $objCon = new ConexionController();
         $objCon -> ctrLogin($user, $pass);
-
     }
-
-    echo "<script>
-        let timerInterval
-        Swal.fire({
-        title: 'Bienvenido a Barbes!',
-        html: 'Iniciaremos en <b></b> milliseconds.',
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: () => {
-            Swal.showLoading()
-            const b = Swal.getHtmlContainer().querySelector('b')
-            timerInterval = setInterval(() => {
-            b.textContent = Swal.getTimerLeft()
-            }, 100)
-        },
-        willClose: () => {
-            clearInterval(timerInterval)
-        }
-        }).then((result) => {
-        /* Read more about handling dismissals below */
-        if (result.dismiss === Swal.DismissReason.timer) {
-            console.log('I was closed by the timer')
-        }
-        });
-                       
-        </script>";
-
+ 
     ?>
-
+ 
     <div class="frase">
-        I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER 
+        I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER
     </div>
-    
-
-    
-    
 </body>
 </html>
+ 
+ 
