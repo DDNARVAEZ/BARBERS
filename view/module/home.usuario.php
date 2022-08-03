@@ -10,6 +10,8 @@
         <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="view/css/home.usuario.css">
+        <link rel="stylesheet" href="view/css/sweetalert2.min.css">
+        <script src="view/js/sweetalert2.all.min.js"></script>
        
        
        
@@ -43,7 +45,7 @@
        
         <form method="post" class="formulario">
             <input type="hidden" name="txtOcu">
-            <input type="submit" class="salir" value=" SALIR">      
+            <input type="submit" class="salir" value=" SALIR ">      
         </form>
  
         <?php
@@ -57,6 +59,33 @@
             <?php
             date_default_timezone_set("America/Bogota");
             echo date(" D / d / M / Y");
+
+            echo " <script>
+            let timerInterval
+Swal.fire({
+  title: 'Bienvenido!',
+  html: 'Interactua con BARBERS en <b></b> milliseconds.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+            
+            </script>"
+            
            
             ?>
         </div>
@@ -66,11 +95,18 @@
         <a href="index.php?ruta=Usuario"><button type="button" class="btn-mod-user"><i class="fa fa-bell"></i> Usuarios</button></a>
        
         <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-citas"><i class="fa-solid fa-clock"></i> Citas </button></a>
-   
- 
-         <div class="frase">
-            I LOVE <i class="fa-solid fa-face-grin-hearts icon-love"></i><br> BARBER
+
+        <div class="frase">
+        I LOVE <i class="fa-solid fa-face-grin-hearts icon-love"></i><br>BARBER
         </div>
+
+       
+            
+        
+ 
+       
+
+
  
  
  

@@ -136,23 +136,8 @@ body {
       font-weight: 550;
       
       
-
-      
  
      }
-
-      .frase{
-      font-size: 45px;
-      color: rgb(37, 209, 240);
-      position: relative;
-      left: 50%;
-      bottom: 50%;
-     
-    
-    }
-    .icon-love{
-      color: rgb(255, 0, 85);
-    }
 
     .users{
       position: absolute;
@@ -186,6 +171,16 @@ body {
       left: 60px;
       bottom: 0px;
       
+    }
+    .frase{
+      position: relative;
+      margin-left: 80%;
+      font-size: 45px;
+      color: rgba(31, 147, 241, 0.76);
+    
+    }
+    .icon-love{
+      color: rgb(255, 0, 85);
     }
     
     

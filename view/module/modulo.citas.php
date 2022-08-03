@@ -36,24 +36,16 @@
 
 
 <div class="col">
-    <h1 class = "titulo">Citas</h1>
+    <h1 class = "titulo">GO TO</h1>
 <div class="nav" id="tab" role="tablist" aria-orientation="vertical">
 
-<a class="btn btn-app" type="submit" onClick="validar(event);">
-<i class="fa-solid fa-calendar-days"></i><br> Solicitar 
+
+<a class="btn btn-app" href="index.php?ruta=Usuario">
+<i class="fa-solid fa-circle-user logo-mod"></i><br>
+USUARIO
 </a>
 
-<a class="btn btn-app">
-<i class="fa-solid fa-trash-can"></i><br> Eliminar
-</a>
 
-<a class="btn btn-app">
-<i class="fas fa-edit"></i><br> Editar
-</a>
-
-<a class="btn btn-app">
-<i class="fa-solid fa-clipboard-list"></i><br> Listar
-</a>
 
 
 </div>
@@ -62,14 +54,14 @@
 
 <div class="card card-primary">
 <div class="card-header">
-<h3 class="card-title">¡Citas!</h3>
+<h3 class="card-title">Citas</h3>
 </div>
 
 <div class="card-body">
 <form method="post">
 <div class="form-group">
 <label for="exampleInputEmail1">Nombre</label>
-<input type="text" class="form-control" id="txtnombre" name="txtnombre" placeholder="Ingrese nombre">
+<input type="text" class="form-control" id="txtnombre" name="txtnombre" placeholder="Ingrese nombre" required>
 
 
 
@@ -85,6 +77,7 @@ $resultado = mysqli_query($mysqli,"select * from servicios");
 
 <label for="exampleInputPassword1">Servicio adicional</label>
 <select name="servicio" class="form-control" id="txtservicio" name="txtservicio" required>
+<option value="">Seleccionar servicio</option>
     <?php
 
         while ($fila = $resultado->FETCH_ASSOC()):
@@ -101,9 +94,19 @@ $resultado = mysqli_query($mysqli,"select * from servicios");
 
 
 <label for="exampleInputPassword1">Barberia</label>
-<select name="servicio" class="form-control" id="txtbarberia" name="txtbarberia">
+<select name="servicio" class="form-control" id="txtbarberia" name="txtbarberia" required>
     <option value="">Seleccionar Barberia</option>
-    <option value="">BarberShop</option>
+    <?php
+    $resultado = mysqli_query($mysqli,"select * from barberias");
+
+        while ($fila = $resultado->FETCH_ASSOC()):
+        $id = $fila['ID_BARBERIA'];
+        $barb= $fila['NOMBRE'];
+        echo "<option value=$id>$barb</option>";
+            endwhile;
+
+    ?>
+    
 </select>
 
 
@@ -111,19 +114,27 @@ $resultado = mysqli_query($mysqli,"select * from servicios");
 
 <div class="form-group2">
 <label for="exampleInputEmail1">fecha</label>
-<input type="date" class="form-control" id="datefecha" name="datefecha" placeholder="Enter email">
+<input type="date" class="form-control" id="datefecha" name="datefecha" required >
 
 
 
 <label for="exampleInputPassword1">hora</label>
-<input type="time" class="form-control" id="timehora" name="timehora" placeholder="Password">
+<input type="time" class="form-control" id="timehora" name="timehora" required>
 
 
 <label for="exampleInputPassword1">Barbero</label>
-<select name="servicio" class="form-control" id="txtbarbero" name="txtbarbero">
+<select name="servicio" class="form-control" id="txtbarbero" name="txtbarbero" required>
     <option value="">Seleccionar Barbero</option>
-    <option value="">Billy</option>
-    <option value="">Will</option>
+<?php
+    $resultado = mysqli_query($mysqli,"select * from barberos");
+
+        while ($fila = $resultado->FETCH_ASSOC()):
+        $id = $fila['ID_BARBERO'];
+        $barb= $fila['NOMBRE'];
+        echo "<option value=$id>$barb</option>";
+            endwhile;
+
+    ?>
 </select>
 
 

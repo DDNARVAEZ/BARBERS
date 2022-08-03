@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="view/css/sweetalert2.min.css">
+<script src="view/js/sweetalert2.all.min.js"></script>
+
 <?php
  
  
@@ -15,9 +18,12 @@
                 //echo "<script>alert('ha ingresado');</script>";
  
             }else{
-                echo "<script>alert('contraseña errada');
-                </script>";
-                header("location: index.php");
+                echo "<script>Swal.fire(
+                    'Oops?',
+                    'E-mail o contraseña errada?',
+                    'error');
+                </script>; location: index.php";
+                
  
             }
         }

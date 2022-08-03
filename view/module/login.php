@@ -20,18 +20,19 @@
         <div class="contenedor">
        
             <div class="input-contenedor">            
-                <input type="text" name="txtUser" placeholder="Ingresar E-mail">
+                <input type="text" name="txtUser" placeholder="Ingresar E-mail" require>
             </div>
             <div class="input-contenedor">
-                <input type="password" name="txtPass" placeholder="Ingresar Contraseña">
+                <input type="password" name="txtPass" placeholder="Ingresar Contraseña" require>
             </div>
  
            
 <!-- ENLACES -->
             <a class="link" href="view/module/recordar.clave.php">Recordar Contraseña</a><br/>
-            <a class="link2" href="">Cambiar Contraseña</a>
+            <br>¿Eres Barbero?<a class="link2" href=""> Registrate</a>
+            <br>
 <!-- BOTONES-->        
-            <input class="btn" type="submit" value="Iniciar Sesion">
+            <br><input class="btn" type="submit" value="Iniciar Sesion">
             <input href="index.php?ruta=registrar"class="btn2" type="button" value="Registrar Cuenta">
         </div>
            
@@ -48,7 +49,7 @@
     ?>
  
     <div class="frase">
-        I LOVE<i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER
+        I LOVE <i class="fa-solid fa-face-grin-hearts icon2"></i><br>BARBER
     </div>
 </body>
 </html>

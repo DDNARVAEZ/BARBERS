@@ -148,3 +148,17 @@ bottom: 115px;
 }
  
  
+.log-mod{
+  font-size: 25px;
+  margin-top: 5px;
+  margin: 8px;
+  color: rgb(74, 75, 75);
+}
+.log-mod:hover{
+  color: #fff;
+}
+
+.card-title{
+  text-align: center;
+}
+

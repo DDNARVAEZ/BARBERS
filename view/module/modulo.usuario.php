@@ -36,10 +36,11 @@
         </div>
  
         <div class="col">
-            <h1 class="titulo">Usuario</h1>
+            <h1 class="titulo">GO TO</h1>
             <div class="nav" id="tab" role="tablist" aria-orientation="vertical">
                 <a href="index.php?ruta=Citas" class="btn btn-app">
-                    <i class="fas fa-clock"></i><br> CITAS
+                    <i class="fas fa-clock log-mod"></i><br> 
+                    CITAS
                 </a>
             </div>
         </div>
@@ -47,7 +48,7 @@
  
         <div class="card card-primary">
             <div class="card-header">
-                <h3 class="card-title">Datos De Ususario</h3>
+                <h3 class="card-title">Usuario</h3>
             </div>
  
             <div class="card-body">

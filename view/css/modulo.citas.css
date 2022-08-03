@@ -146,10 +146,23 @@ body {
   bottom: 70px;
   
 }
+.card-title{
+  text-align: center;
+}
 
 
 h1 {
   font-size: 15px;
+}
+
+.logo-mod{
+  font-size: 25px;
+  margin-top: 5px;
+  margin: 8px;
+  color: rgb(74, 75, 75);
+}
+.logo-mod:hover{
+  color: #fff;
 }
 
 

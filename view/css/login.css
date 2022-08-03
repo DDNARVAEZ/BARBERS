@@ -141,7 +141,7 @@ p{
 }
 .link2{
   text-decoration: none;
-  color: #e63b51;
+  color: #3b99e6;
   font-weight: 600;
   margin-top: 15px;
 }
@@ -164,8 +164,7 @@ p{
 }
 .frase{
   position: relative;
-  left: 80%;
-  bottom: 100%;
+  margin-left: 80%;
   font-size: 45px;
   color: rgb(72, 228, 98, 0.76);
 
