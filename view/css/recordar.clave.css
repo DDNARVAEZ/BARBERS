@@ -2,17 +2,17 @@
 /*CUERPO*/
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: white;
-    background-position-x: center;
-    background-size:cover;
-    background-attachment:initial;
-  }
-  * {
-    box-sizing: border-box;
-  
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #fff;
+  background-position-x: center;
+  background-size:cover;
+  background-attachment:initial;
+}
+* {
+  box-sizing: border-box;
+
+}
   
   /*CONTENEDORES*/
   .contenedor{
@@ -21,24 +21,25 @@ body {
     padding: 150px;
     margin-left: 25%;
     margin-top: 5%;
-    color: rgb(75, 73, 69);
+    color: rgba(31, 147, 241, 0.76);;
     border: solid 4px;
     border-radius: 5px;
+    background: rgba(238, 237, 233, 0.13);
   
   }
   
-  .input-contenedor{
+  .input{
     margin-bottom: 15px;
-    border: 1px solid #aaa;
+    border: 2px solid rgba(206, 198, 198, 0.644);
     width: 100%;
+    margin-left: 50px;
     
   }
   
   /*FORMULARIO*/
   
   .formulario{
-    background: white;
-    
+    background: none;
     
 
   }
@@ -168,13 +169,13 @@ body {
   
   .frase{
     position: relative;
-    margin-left:  85%;
-    margin-bottom: 90%;
-    
+    margin-left: 80%;
     font-size: 45px;
-    color: rgb(63, 160, 240);
+    color: rgba(31, 147, 241, 0.76);
   
   }
+  
+  
 
   .titulo{
     position: relative;

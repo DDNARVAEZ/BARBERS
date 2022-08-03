@@ -15,10 +15,11 @@
         <fieldset class="contenedor">
         <legend class="legenda"><b>..............</b></legend>
         <form class="formulario">
-            <div class="input-contenedor">
-                <i class="fa-solid fa-message icon"></i>
-                <input type="text" placeholder="Correo Electronico Registrado">
-            </div>
+           
+               <input type="text" class="input" placeholder="Ingresa Correo Electronico Registrado">
+           
+            <br>
+            <br>
            
             <div>
                 <a href="?"><button type="button" class="btn btn-primary btn-block"><i class="fa fa-bell"></i> Recordar Contraseña </button></a>

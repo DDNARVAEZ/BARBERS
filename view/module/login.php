@@ -19,12 +19,12 @@
 <!-- INICIA EL CONTENEDOR-->
         <div class="contenedor">
        
-            <div class="input-contenedor">            
-                <input type="text" name="txtUser" placeholder="Ingresar E-mail" require>
-            </div>
-            <div class="input-contenedor">
-                <input type="password" name="txtPass" placeholder="Ingresar Contraseña" require>
-            </div>
+                     
+            <input type="text" class ="inputs" name="txtUser" placeholder="Ingresar E-mail" require>
+            
+            
+            <input type="password" class ="inputs" name="txtPass" placeholder="Ingresar Contraseña" require>
+            
  
            
 <!-- ENLACES -->
@@ -33,7 +33,7 @@
             <br>
 <!-- BOTONES-->        
             <br><input class="btn" type="submit" value="Iniciar Sesion">
-            <input href="index.php?ruta=registrar"class="btn2" type="button" value="Registrar Cuenta">
+            <input href="Form_Usua.php"class="btn2" type="button" value="Registrar Cuenta">
         </div>
            
     </form>

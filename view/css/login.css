@@ -21,11 +21,6 @@ body {
   
 }
 
- .input-contenedor{
-  margin-bottom: 15px;
-  border: 1px solid #aaa;
-  outline: none;
-}
 
 /*FORMULARIO*/
 
@@ -56,9 +51,14 @@ h1{
 input[type="text"], 
 input[type="password"]{
   font-size:  20px;
-  width: 82%;
+  width: 100%;
   padding: 10px;
-  border: 4px;
+  margin-bottom: 35px;
+  border: 1px solid rgba(95, 95, 95, 0.644);
+}
+input:hover{
+  border: 1px solid cadetblue;
+
 }
 
 /*ICONOS*/
@@ -93,6 +93,7 @@ input[type="password"]{
   cursor: pointer;
   text-decoration-color: transparent;
   margin-top: 10px;
+  margin-bottom: 15px;
   
 }
 .btn:hover{
