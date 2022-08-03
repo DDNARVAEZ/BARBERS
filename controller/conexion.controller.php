@@ -15,7 +15,9 @@
                 //echo "<script>alert('ha ingresado');</script>";
  
             }else{
-                echo "<script>alert('contraseña errada');</script>";
+                echo "<script>alert('contraseña errada');
+                </script>";
+                header("location: index.php");
  
             }
         }

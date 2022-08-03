@@ -21,7 +21,7 @@ class ModelCita{
 
     }
 
-    public function mdlServicio(){
+    /*public function mdlServicio(){
         $sql= "CALL spMostrarServicios()";
 
         try {
@@ -37,7 +37,7 @@ class ModelCita{
 
         
 
-    }
+    } */
 
 
 

@@ -14,7 +14,7 @@ class ControllerCita{
     }
 
 
-    public function ctrServicio(){
+    /*public function ctrServicio(){
 
         $lista = false;
         try {
@@ -33,7 +33,7 @@ class ControllerCita{
         return $lista;
 
 
-    }
+    }*/
 }
 
 ?>

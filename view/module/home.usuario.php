@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,7 +28,9 @@
                 <img src="view/img/colombia.png" class="img-circs"  alt="imgUser">
                 </div>
                 <div class="infos">
-                <a href="#" class="name">Nombre de usuario</a>
+            
+                <strong> <?php echo $_SESSION['login'];?></strong>
+
                 </div>
             </div>
            

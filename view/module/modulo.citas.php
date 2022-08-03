@@ -73,20 +73,30 @@
 
 
 
+
+<?php 
+
+$mysqli = mysqli_connect("localhost", "root","","barbers");
+$resultado = mysqli_query($mysqli,"select * from servicios");
+
+?>
+
+
+
 <label for="exampleInputPassword1">Servicio adicional</label>
 <select name="servicio" class="form-control" id="txtservicio" name="txtservicio" required>
-    <option value="">Agregar servicio</option>
     <?php
-    require_once "controller/cita.controller.php";
-    $objCtrOpcion = new ControllerCita();
-    $listaServicios = $objCtrOpcion->ctrServicio();
 
-    foreach($listaServicios as $list){
-        echo '<option value="'.$list["ID_SERVICIO"].'">'.$list["DESCRIPCION"].'</option>';
-    }
+        while ($fila = $resultado->FETCH_ASSOC()):
+        $id = $fila['ID_SERVICIO'];
+        $descrip = $fila['DESCRIPCION'];
+        echo "<option value=$id>$descrip</option>";
+            endwhile;
 
-    ?>   
+    ?>
 </select>
+
+
 
 
 
