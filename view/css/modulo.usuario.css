@@ -162,3 +162,16 @@ bottom: 115px;
   text-align: center;
 }
 
+.DatPers1{/*------estilo para el contenedor "datos personales"*/
+  width: 400px;
+  height: 455px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  background-color: azure;
+  border: 3px solid rgb(63, 160, 240);
+  border-radius: 3%;
+  text-align: center;
+  
+
+}

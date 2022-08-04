@@ -7,6 +7,7 @@
         case 'Citas':
             require_once "view/module/modulo.citas.php";
         break;
+       
         default:
             require_once "view/module/home.usuario.php";
         break;

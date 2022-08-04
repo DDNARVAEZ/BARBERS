@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-07-2022 a las 00:28:06
+-- Tiempo de generación: 04-08-2022 a las 05:33:39
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -68,9 +68,15 @@ UPDATE citas SET FECHA = _FECHA, HORA = _HORA, NOMBRE = _NOMBRE WHERE ID_CITA = 
 END$$
 
 DROP PROCEDURE IF EXISTS `SpEditarUsuario`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEditarUsuario` (IN `_DIRECCION` VARCHAR(30), IN `_F_NACIMIENTO` DATE, IN `_NOMBRE` VARCHAR(30), IN `_NUM_CELULAR` INT(10), IN `_ID_USUARIO` INT(10))   BEGIN
-
-UPDATE USUARIOS SET DIRECCION = _DIRECCION, F_NACIMIENTO = _F_NACIMIENTO, NOMBRE = _NOMBRE, NUM_CELULAR = _NUM_CELULAR  WHERE ID_USUARIO = _ID_USUARIO;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEditarUsuario` (IN `_CEDULA` INT(15), IN `_NOMBRE` VARCHAR(30), IN `_APELLIDO` VARCHAR(30), IN `_NUM_CELULAR` INT(15), IN `_F_NACIMIENTO` DATE, IN `_EMAIL` VARCHAR(30), IN `_CONTRASENA` VARCHAR(30))   BEGIN
+      UPDATE `usuarios` SET `NOMBRE`=_NOMBRE, 
+      `APELLIDO`=_APELLIDO,
+      `NUM_CELULAR`=_NUM_CELULAR,
+      `F_NACIMIENTO`=_F_NACIMIENTO,
+      `EMAIL`=_EMAIL,
+      `CONTRASENA`=_CONTRASENA
+      WHERE `CEDULA`=_CEDULA;
+	
 
 END$$
 
@@ -96,9 +102,9 @@ DELETE FROM citas WHERE ID_CITA = _ID_CITA;
 END$$
 
 DROP PROCEDURE IF EXISTS `SpEliminarUsuario`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEliminarUsuario` (IN `_DIRECCION` INT(30), IN `_F_NACIMIENTO` INT(10), IN `_NOMBRE` INT(30), IN `_NUM_CELULAR` INT(10), IN `_ID_USUARIO` INT(10))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SpEliminarUsuario` (IN `_CEDULA` INT(15))   BEGIN
 
-DELETE FROM usuarios WHERE ID_USUARIO = _ID_USUARIO;
+DELETE FROM usuarios WHERE CEDULA = _CEDULA;
 
 
 END$$
@@ -139,7 +145,7 @@ END$$
 DROP PROCEDURE IF EXISTS `SpVerUsuario`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SpVerUsuario` ()   BEGIN
 
-SELECT * FROM usuarios WHERE CEDULA = _CEDULA;
+    SELECT `CEDULA`, `NOMBRE`, `APELLIDO`,`NUM_CELULAR`,`F_NACIMIENTO`, `EMAIL`, `CONTRASENA` FROM `usuarios`;
 
 
 END$$
@@ -173,14 +179,16 @@ CREATE TABLE IF NOT EXISTS `barberias` (
   `NOMBRE` varchar(30) DEFAULT NULL,
   `DIRECCION` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`ID_BARBERIA`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `barberias`
 --
 
 INSERT INTO `barberias` (`ID_BARBERIA`, `NOMBRE`, `DIRECCION`) VALUES
-(1, 'BarberShop', 'Calle 100');
+(1, 'BarberShop', 'Calle 100'),
+(2, 'NewYorkInc', 'Av Paris'),
+(3, 'Legend', 'DG Red');
 
 -- --------------------------------------------------------
 
@@ -223,6 +231,7 @@ CREATE TABLE IF NOT EXISTS `barberos` (
 --
 
 INSERT INTO `barberos` (`ID_BARBERO`, `NOMBRE`, `NUM_CELULAR`, `DIRECCION`, `FORMACION`, `F_NACIMIENTO`, `ID_BARBERIA`) VALUES
+(0, 'Victor ', 315222555, 'Barrio Rosales', 'Tecnologo', '2002-08-21', NULL),
 (4578965, 'Billy', 2147483647, 'Av San juan', 'Tecnico', '1992-07-21', 1);
 
 -- --------------------------------------------------------
@@ -288,7 +297,7 @@ DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `CEDULA` int(15) NOT NULL,
   `NOMBRE` varchar(30) DEFAULT NULL,
-  `APELLIDO` int(30) NOT NULL,
+  `APELLIDO` varchar(30) NOT NULL,
   `NUM_CELULAR` int(15) DEFAULT NULL,
   `F_NACIMIENTO` date DEFAULT NULL,
   `EMAIL` varchar(30) DEFAULT NULL,
@@ -301,7 +310,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`CEDULA`, `NOMBRE`, `APELLIDO`, `NUM_CELULAR`, `F_NACIMIENTO`, `EMAIL`, `CONTRASENA`) VALUES
-(1, 'RICHARD LOPEZ', 0, 2147483647, '0000-00-00', 'BARBERS@GMAIL.COM', '123');
+(1001158315, 'PEDRO', 'LOPEZ', 2147483647, '0000-00-00', 'BARBERS@GMAIL.COM', '123');
 
 --
 -- Restricciones para tablas volcadas
