@@ -62,7 +62,6 @@
                         <th>Numero Celular</th>
                         <th>Fecha Nacimiento</th>
                         <th>Email</th>
-                        <th>Contrasena</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -81,7 +80,7 @@
                                     <td>" . $dato["NUM_CELULAR"] .  "</td>
                                     <td>" . $dato["F_NACIMIENTO"] . "</td>
                                     <td>" . $dato["EMAIL"] .        "</td>
-                                    <td>" . $dato["CONTRASENA"] .   "</td>
+                                    
                                    
                                     <td>
  
