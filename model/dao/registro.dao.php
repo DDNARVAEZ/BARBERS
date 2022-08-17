@@ -66,8 +66,8 @@
        
  
         public function mdlEditarUsuario(){
-            $sql = "CALL SpEditarUsuario(?, ?, ?, ?, ?, ?, ?);";
-            $this -> estado = false;
+            $sql = "CALL SpEditarUsuario(?, ?, ?, ?, ?, ?);";
+            $this -> estado = false;    
             try {
                 $con = new Conexion();
                 $stmt = $con -> conexion() -> prepare($sql);
@@ -77,7 +77,7 @@
                 $stmt -> bindParam ( 4, $this->num_celular, PDO::PARAM_INT);
                 $stmt -> bindParam ( 5, $this->f_nacimiento, PDO::PARAM_INT);
                 $stmt -> bindParam ( 6, $this->email, PDO::PARAM_STR);
-                $stmt -> bindParam ( 7, $this->contrasena, PDO::PARAM_STR);
+                //$stmt -> bindParam ( 7, $this->contrasena, PDO::PARAM_STR);
            
                 $stmt -> execute();
                 $this ->estado = true;

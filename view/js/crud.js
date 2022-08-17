@@ -1,18 +1,18 @@
 function modificar(obj) {
-    mnombre      = document.getElementById('txtnombre');
-    mapellido    = document.getElementById('txtapellido');
-    mcedula      = document.getElementById('txtcedula');
-    mnumerocel   = document.getElementById('txtnumerocel');
-    mfecha       = document.getElementById('txtfnacimiento');
-    memail       = document.getElementById('txtemail');
-    mcontraseña  = document.getElementById('txtcontrasena');
+    mnombre = document.getElementById('txtnombre');
+    mapellido = document.getElementById('txtapellido');
+    mcedula = document.getElementById('txtcedula');
+    mnumerocel = document.getElementById('txtnumerocel');
+    mfecha = document.getElementById('txtfnacimiento');
+    memail = document.getElementById('txtemail');
+    mcontraseña = document.getElementById('txtcontrasena');
  
-    mcedula.value     = (obj.children[0].innerHTML);
-    mnombre.value     = (obj.children[1].innerHTML);
-    mapellido.value   = (obj.children[2].innerHTML);
-    mnumerocel.value  = (obj.children[3].innerHTML);
-    mfecha.value      = (obj.children[4].innerHTML);
-    memail.value      = (obj.children[5].innerHTML);
+    mcedula.value = (obj.children[0].innerHTML);
+    mnombre.value = (obj.children[1].innerHTML);
+    mapellido.value = (obj.children[2].innerHTML);
+    mnumerocel.value = (obj.children[3].innerHTML);
+    mfecha.value = (obj.children[4].innerHTML);
+    memail.value = (obj.children[5].innerHTML);
     mcontraseña.value = (obj.children[6].innerHTML);
  
 }
@@ -46,7 +46,7 @@ function eliminar(obj) {
             result.dismiss === Swal.DismissReason.cancel
         ) {
             swalWithBootstrapButtons.fire(
-                'Oops',
+                'Oops!',
                 'el registro no se elimino :)',
                 'error'
             )

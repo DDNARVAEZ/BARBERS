@@ -19,24 +19,21 @@
     <body>
  
     <!-- contenedores -->
-        <div class="contenedor1">
-            <img src="view/img/logo.jpg" alt="logo" width= "100" heigth= 200>
-            <div class="contenedor2">
-            <i class="fa-solid fa-circle-user icon" ></i>
+      <div class="contenedor1">
+          <img src="view/img/logo.jpg" alt="logo" width= "100" heigth= 200>
+        
+        </div>
+
+        <div class="user">
+            <div class="imag">
+                <img src="view/img/colombia.png" class="img-circ" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="name">Nombre de usuario</a>
+            </div>
         </div>
  
-            <div class="users">
-                <div class="imags">
-                <img src="view/img/colombia.png" class="img-circs"  alt="imgUser">
-                </div>
-                <div class="infos">
             
-                <strong> <?php echo $_SESSION['login'];?></strong>
-
-                </div>
-            </div>
-           
-        </div>
  
  
  
@@ -54,6 +51,8 @@
                 header("location:index.php");
             }
         ?>
+
+      </div>
         <!-- fecha actual-->
         <div class="date">
             <?php
@@ -91,14 +90,25 @@ Swal.fire({
         </div>
  
         <!-- ingreso a modulos -->
-       
+      <div class="cont-user">
+     
+        <a href="index.php?ruta=registrar"><button type="button" class="btn-mod-user"><i class="fa-solid fa-address-card"></i> Registrar Usuario</button></a>
         <a href="index.php?ruta=Usuario"><button type="button" class="btn-mod-user"><i class="fa fa-bell"></i> Usuarios</button></a>
        
-        <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-citas"><i class="fa-solid fa-clock"></i> Citas </button></a>
-
-        <div class="frase">
-        I LOVE <i class="fa-solid fa-face-grin-hearts icon-love"></i><br>BARBER
+        <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-user"><i class="fa-solid fa-clock"></i> Citas </button></a>
         </div>
+
+      <div class="cont-barb">
+     
+          <a href="index.php?ruta=registrar"><button type="button" class="btn-mod-user"><i class="fa-solid fa-address-card"></i> Registrar Barbero</button></a>
+          <a href="index.php?ruta=Usuario"><button type="button" class="btn-mod-user"><i class="fa fa-bell"></i> Barberos</button></a>
+    
+          <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-user"><i class="fa-solid fa-clock"></i> Agenda </button></a>
+      </div>
+
+      <div class="frase">
+        I LOVE <i class="fa-solid fa-face-grin-hearts icon-love"></i><br>BARBER
+      </div>
 
        
             

@@ -41,7 +41,7 @@ class RegistroUsu{
         return $this -> email;
     }
     public function getContrasena(){
-        return $this -> contrasena;
+       return $this -> contrasena;
     }
  
     // LAS FUNCIONES TIPO SET SON PARA CAPTURAR DATOS DEL CONTROLADOR

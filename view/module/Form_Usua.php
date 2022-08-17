@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="../../view/css/usuariosStyle.css">
+    <link rel="stylesheet" href="view/css/usuariosStyle.css">
     <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/css/sweetalert2.min.css">
     <script src="view/js/sweetalert2.all.min.js"></script>
@@ -17,9 +17,14 @@
 <body>
     <header>
         <div class="logo1u">
-            <img class="logo1a" src="veiw/img/logo.jpg">
+            <img class="logo1a" src="view/img/logo.jpg">
         </div>
         <div class="R_usuari">REGISTRO DE USUARIOS</div>
+        <div class="nav">
+       
+          <a href="index.php?ruta"><button type="button" class="btn-homes">HOME <i class="fa-solid fa-house-user"></i></i></button></a>
+ 
+        </div>
     </header>
     <main class="main1">
         <form class="Form_datper" method="POST">
@@ -42,30 +47,25 @@
                 <br>
                 <br>
                 <div>
-                    <select class="indi">
-                        <option>+57</option>
-                        <option>+54</option>
-                        <option>+51</option>
-                        <option>+591</option>
-                    </select><input type="number" id="txt_numerocel" name="txt_numerocel" placeholder="# Movil" class="BotDa_Num" required>
+                    <input type="number" id="txt_numerocel" name="txt_numerocel" placeholder="# Movil" class="BotDatPer" required>
                 </div>
                 <br>
                 <br>
                 <div>
-                    <input type="date_create" id="txt_fnacimiento" name="txt_fecha" placeholder="año/mes/dia" class="BotDatPer" required>
+                    <input type="date" id="txt_fnacimiento" name="txt_fecha" placeholder="año/mes/dia" class="BotDatPer" required>
                     <br>
                     *Fecha de Nacimiento
                 </div>
                 <br>
                 <div>
-                    <input type="email" id="txt_email" name="txt_email" placeholder="E-mail" class="Bot_emai" required>
+                    <input type="email" id="txt_email" name="txt_email" placeholder="E-mail" class="BotDatPer" required>
                     <br>
                     *este funcionara como tu usuario
                 </div>
                 <br>
                 <br>
                 <div>
-                    <input type="password" id="txt_contrasena" name="txt_contrasena" placeholder="Contraseña" class="BotDatUsu" required>
+                    <input type="password" id="txt_contrasena" name="txt_contrasena" placeholder="Contraseña" class="BotDatPer" required>
                     <br>
                     *minimo 6 caracteres maximo 12
  

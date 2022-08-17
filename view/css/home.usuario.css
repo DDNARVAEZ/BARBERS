@@ -6,6 +6,8 @@ body {
     background-position-x: center;
     background-size:cover;
     background-attachment:initial;
+    box-sizing: border-box;
+    
   }
   * {
     box-sizing: border-box;
@@ -14,7 +16,7 @@ body {
   /*CONTENEDORES*/
 .contenedor1{
   position: relative;
-  background: transparent;
+  background: url(../img/portada3.jpg);
   height: 115px;
   position: fixed;
   width: 100%;
@@ -81,36 +83,44 @@ body {
 
       /*input*/
 
-    .btn-mod-user, .btn-mod-citas{
+    .btn-mod-user{
       position: relative;
       font-size: 40px;
       color: white;
       background-color:rgb(37, 209, 240);
-      width: 700px;
+      width: 350px;
       height: 150px;
       border-radius: 10px;
       cursor: pointer;
       text-decoration-color: transparent;
       border: 1px solid rgb(37, 209, 240);
+      margin: 25px;
       
       
       
     }
-    .btn-mod-user:hover,.btn-mod-citas:hover{
+    .btn-mod-user:hover{
       background: cadetblue;
       transition-delay: 10ms;
     }
 
-    .btn-mod-user{
+    .cont-user{
       position: relative;
-      margin-left: 33%;
-      margin-top: 10%;
+      margin-left: 15%;
+      margin-top: 5%;
+      width: 400px;
+      height: 64%;
+      background-color: rgba(0, 255, 255, 0.123);
     }
 
-    .btn-mod-citas{
+    .cont-barb{
       position: relative;
-      margin-left: 33%;
-      margin-top: 5%;
+      margin-left: 40%;
+      bottom: 40%;
+      bottom: 575px;
+      width: 400px;
+      height: 64%;
+      background-color: rgba(0, 255, 255, 0.123);
     }
 
     
@@ -174,14 +184,47 @@ body {
     }
     .frase{
       position: relative;
-      margin-left: 80%;
+      left: 85%;
+      bottom: 750px;
       font-size: 45px;
       color: rgba(31, 147, 241, 0.76);
+      width: 250px;
+      
     
     }
     .icon-love{
       color: rgb(255, 0, 85);
     }
+
+    .user{
+      position: absolute;
+      position: relative;
+      left: 500px;
+      top: 10px;
+      background: gray;
+      line-height: 60px;
+      width: 300px;
+      height: 60px;
+      border-radius: 3px;
+      }
+       
+      .imag .img-circ{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 60px;
+      top: 10px;
+       
+      }
+      .info{
+      position:absolute;
+       
+      width: 240px;
+      height: 60px;
+      left: 60px;
+      bottom: 0px;
+      border-left: 2px solid #dee2e6;;
+      }
     
     
       

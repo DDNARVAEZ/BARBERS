@@ -8,8 +8,8 @@
                 if ( $objDaoregistro -> mdlInsertarUsuario() ) {
                     echo "<script>
                         Swal.fire(
-                        'Super!',
-                        'El Usuario ah sido Registrado',
+                        'GENIAL !!',
+                        'El Usuario ha sido Registrado',
                         'success'
                         );</script>";
    
@@ -27,7 +27,7 @@
            
             $array = false;
             try {
-                $objDtoRegistro = new RegistroUsu (null, null, null, null, null, null, null );
+                $objDtoRegistro = new RegistroUsu (null, null, null, null, null, null,null );
                 $objDaoRegistro = new ModelRegistro ( $objDtoRegistro );
                 $array =$objDaoRegistro -> mdlVerUsuario() -> fetchAll();
                
@@ -56,8 +56,8 @@
             if ($objDaoRegistro -> mdlEditarUsuario()){
                 echo "<script>
                     Swal.fire(
-                        'Super!',
-                        'El registro ha sido modificado',
+                        'Genial!!',
+                        'El usuario ha sido modificado',
                         'success'
                     );
                     </script>
@@ -65,7 +65,7 @@
             } else{
                     echo "<script>
                         Swal.fire(
-                            'Oops',
+                            'ups!!',
                             'No se pudo modificar',
                             'danger'
                         );

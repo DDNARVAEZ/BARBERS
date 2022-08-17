@@ -7,6 +7,9 @@
         case 'Citas':
             require_once "view/module/modulo.citas.php";
         break;
+        case 'registrar':
+            require_once "view/module/Form_Usua.php";
+        break;
        
         default:
             require_once "view/module/home.usuario.php";
