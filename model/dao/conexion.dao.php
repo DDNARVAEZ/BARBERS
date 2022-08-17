@@ -10,7 +10,7 @@ class ModelConexion{
     public function __construct($user,$pass){
  
         $this -> user = $user;
-        $this -> pass = $pass;
+        $this -> pass = md5($pass,false);
     }
      
  
