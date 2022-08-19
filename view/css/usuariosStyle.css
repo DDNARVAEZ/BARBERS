@@ -1,16 +1,24 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: #f1f1f1;
-    background: url(../img/fbar.jpg.png);
+    background: url(../img/fondo8.jpg);
+    background-attachment: fixed;
+    background-repeat:round;
+   
+    
+   
+  
  
    
    
 }
+
+
  
  
  
 .btn-homes{
+    position: fixed;
     color: #fff;
     background-color: rgba(40, 5, 238, 0.863);
     border-radius: 1px;
@@ -19,13 +27,12 @@ body{
     width: 170PX;
     border-radius: 3px;
     border: thin;
-    bottom: 50px;
-    left: 40px;
+    top: 100px;
     font-size: 20px;
     cursor: pointer;
-    margin-left: 1300px;
+    margin-left: 100px;
 }
-.btn-home:hover{
+.btn-homes:hover{
   background: cadetblue;
 }
  
@@ -49,32 +56,36 @@ body{
 }
 .R_usuari{/*------estilo para el titulo "registro de usuario-------"*/
     text-align: center;
-    background: rgb(63, 160, 240);
+    background: rgba(63, 160, 240, 0.356);
     font-weight: 100px;
     font-size: 35px;
-    width: 800px;
+    width: 100%;
     height: 40px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #aaa;
-    margin-top: 40px;
-    border-radius: 3%;
+    padding: 15px;
     border: none;
+    right: 2px;
    
 }
+
+.tit{
+    text-align: center;
+    color: #fff;
+    font-size:xx-large;
+    bottom: 5px;
+}
 .main1{
-    margin-left: auto;
-    margin-right: 170px;
+    margin-left: 7%;
+    
    
 }
 .Form_datper{ /*estilo para centrar los campos de texto*/
     text-align: center;
+
  
  }
 .DatPers1{/*------estilo para el contenedor "datos personales"*/
     width: 800px;
-    height: 1150px;
+    height: 1000px;
     margin-left: 400px;
     margin-right: auto;
     margin-top: 90px;
@@ -122,6 +133,8 @@ body{
     cursor: pointer;
  
 }
+
+
 .frase1{ /*estilo para la frase i love barber*/
     margin-left: 36cm;
     color:rgb(63, 160, 240);
@@ -546,7 +559,8 @@ body{
  
 .TyC{
     text-align: center;
-    font-size: 35px;
+    font-size: 17px;
+    
 }
 .btnCA{/*estilo para centrar los botones cancelar y continuar*/
     text-align: center;
@@ -568,6 +582,10 @@ body{
     border-radius: 3px;
     height: 45px;
     cursor: pointer;
+}
+
+.btnCo4:hover{
+    background-color: #8fd14f;
 }
 .TxtRegExi{/*estilo para el texto registro exitoso*/
     color: #c469359c;

@@ -15,17 +15,21 @@
 </head>
  
 <body>
-    <header>
-        <div class="logo1u">
-            <img class="logo1a" src="view/img/logo.jpg">
-        </div>
-        <div class="R_usuari">REGISTRO DE USUARIOS</div>
+
+
+    <header class= "encabezado">
+        
+        <div class="R_usuari">
+            <h1 class= "tit">REGISTRO DE USUARIOS</h1></div>
         <div class="nav">
        
           <a href="index.php?ruta"><button type="button" class="btn-homes">HOME <i class="fa-solid fa-house-user"></i></i></button></a>
  
         </div>
     </header>
+
+
+
     <main class="main1">
         <form class="Form_datper" method="POST">
             <fieldset class="DatPers1">

@@ -111,6 +111,7 @@ $resultado = mysqli_query($mysqli,"select * from servicios");
 
 
 </div>
+<button type="submit" class="btn btn-success">Agendar</button>
 
 <div class="form-group2">
 <label for="exampleInputEmail1">fecha</label>
@@ -137,16 +138,12 @@ $resultado = mysqli_query($mysqli,"select * from servicios");
     ?>
 </select>
 
-
 </div>
-
-
-
 
 <div class="card-footer">
 <h1>*Diligenciar todos los campos.</h1>
-</div>
 
+</div>
 
 </form>
 
