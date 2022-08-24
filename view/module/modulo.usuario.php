@@ -37,7 +37,7 @@
         </div>
  
         <div class="col">
-            <h1 class="titulo">GO TO</h1>
+            <h1 class="titulo">VAMOS A</h1>
             <div class="nav" id="tab" role="tablist" aria-orientation="vertical">
                 <a href="index.php?ruta=Citas" class="btn btn-app">
                     <i class="fas fa-clock log-mod"></i><br> 
@@ -93,7 +93,7 @@
                                     </td>
                                 </tr>
                             ";
-                        //se actualizo el onclick del boton eliminar 3/08/2022
+                        
                         //se eliminaron las colunmas de contraseña
                     }
                     ?>

@@ -6,12 +6,13 @@
                 $objDaoregistro = new ModelRegistro ( $objDtoregistro );
                
                 if ( $objDaoregistro -> mdlInsertarUsuario() ) {
-                    echo "<script>
+                    echo  
+                       "<script>
                         Swal.fire(
                         'GENIAL !!',
                         'El Usuario ha sido Registrado',
                         'success'
-                        );</script>";
+                          );</script>";
    
                 } else {
                     echo"ha ocurrido un error";
@@ -55,13 +56,30 @@
             $objDaoRegistro = new ModelRegistro($objDtoRegistro);
             if ($objDaoRegistro -> mdlEditarUsuario()){
                 echo "<script>
+                Swal.fire({
+                    title: 'EXITO',
+                    text: 'SU USUARIO A SIDO EDITADO CON EXITO',
+                    icon: 'success',
+                    showCancelButton: false,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'CONFIRMAR'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location ='index.php?ruta=Usuario';
+                    }else{
+                        window.location='index.php?ruta=Usuario';
+                    }
+                })
+                </script>";
+            
+                /*"<script>
                     Swal.fire(
                         'Genial!!',
                         'El usuario ha sido modificado',
                         'success'
                     );
                     </script>
-                ";
+                ";*/
             } else{
                     echo "<script>
                         Swal.fire(
