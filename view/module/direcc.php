@@ -1,5 +1,5 @@
 <?php
-    if (isset($_GET['ruta']))
+    if (isset($_GET['ruta']))/* aqui podemos encontrar las rutas del proyecto*/
     {switch ($_GET['ruta']) {
         case 'Usuario':
             require_once "view/module/modulo.usuario.php";

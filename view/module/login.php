@@ -27,17 +27,17 @@
             
  
            
-<!-- ENLACES -->
+            <!-- ENLACES -->
             <a class="link" href="view/module/recordar.clave.php">Recordar Contraseña</a><br/>
             <br>¿Eres Barbero?<a class="link2" href=""> Registrate</a>
             <br>
-<!-- BOTONES-->        
+            <!-- BOTONES-->        
             <br><input class="btn" type="submit" value="Iniciar Sesion">
             <input href="Form_Usua.php"class="btn2" type="button" value="Registrar Cuenta">
         </div>
            
     </form>
-    <!--CONTRALADOR CONEXION -->
+            <!--CONTRALADOR CONEXION -->
     <?php
     if (isset($_POST["txtUser"])){
         $user = $_POST["txtUser"];

@@ -6,10 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/42541bfd20.js" crossorigin="anonymous"></script>
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="view/css/modulo.usuario.css">
+        <!-- sweetalert -->
         <link rel="stylesheet" href="view/css/sweetalert2.min.css">
         <script src="view/js/sweetalert2.all.min.js"></script>
     
@@ -94,7 +98,7 @@
                                 </tr>
                             ";
                         
-                        //se eliminaron las colunmas de contraseña
+                        
                     }
                     ?>
  
@@ -106,7 +110,7 @@
                     $objCtrusu->ctrEliminarUsuario();
                 }
             ?>
-            <!-- se crea etiqueta de php,condicional 3/08/2022-->
+            <!---->
  
             <div class="modal modal-info fade" id="modal-modificar">
                 <div class="modal-dialog">

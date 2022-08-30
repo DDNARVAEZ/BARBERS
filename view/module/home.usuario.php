@@ -98,13 +98,13 @@ Swal.fire({
         <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-user"><i class="fa-solid fa-clock"></i> Citas </button></a>
         </div>
 
-      <div class="cont-barb">
+      <!--<div class="cont-barb">
      
           <a href="index.php?ruta=registrar"><button type="button" class="btn-mod-user"><i class="fa-solid fa-address-card"></i> Registrar Barbero</button></a>
           <a href="index.php?ruta=Usuario"><button type="button" class="btn-mod-user"><i class="fa fa-bell"></i> Barberos</button></a>
     
           <a href="index.php?ruta=Citas"><button type="button" class="btn-mod-user"><i class="fa-solid fa-clock"></i> Agenda </button></a>
-      </div>
+      </div>-->
 
       <div class="frase">
         I LOVE <i class="fa-solid fa-face-grin-hearts icon-love"></i><br>BARBER

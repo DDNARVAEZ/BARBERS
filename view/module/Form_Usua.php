@@ -27,7 +27,7 @@
         
             <a href="index.php?ruta"><button type="button" class="btn-homes">HOME <i class="fa-solid fa-house-user"></i></i></button></a>
     
-            </div>
+            
         </header>
 
 
