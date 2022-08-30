@@ -1,5 +1,6 @@
 <?php
-class RegistroUsu{
+class RegistroUsu{ # se crea la clase 
+    /* acontinuacion observamos los atributos de la clase */
     private $cedula;
     private $nombre;
     private $apellido;
@@ -9,7 +10,7 @@ class RegistroUsu{
     private $contrasena;
    
  
-    public function __construct($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena){  
+    public function __construct($cedula,$nombre,$apellido,$num_celular,$f_nacimiento,$email,$contrasena){   #inicia el constructor
        
         $this->cedula       = $cedula;
         $this->nombre       = $nombre;
@@ -20,7 +21,7 @@ class RegistroUsu{
         $this->contrasena   = $contrasena;  
     }
    
-    // LAS FUNCIONES TIPO GET SON PARA MOSTRAR LOS DATOS EN EL MODEL DAO
+   /* LAS FUNCIONES TIPO GET SON PARA MOSTRAR LOS DATOS EN EL MODEL DAO */ 
    
     public function getCedula(){
         return $this -> cedula;
@@ -44,7 +45,7 @@ class RegistroUsu{
        return $this -> contrasena;
     }
  
-    // LAS FUNCIONES TIPO SET SON PARA CAPTURAR DATOS DEL CONTROLADOR
+    /* LAS FUNCIONES TIPO SET SON PARA CAPTURAR DATOS DEL CONTROLADOR */ 
     public function setCedula($cedula){
         $this -> cedula = $cedula;
     }

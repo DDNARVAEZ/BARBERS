@@ -1,7 +1,7 @@
 <?php
-class ModelConexion{
+class ModelConexion{ /*se crea la clase  */
  
-//ATRIBUTOS
+    //ATRIBUTOS
     private $user;
     private $pass;
  
@@ -10,8 +10,9 @@ class ModelConexion{
     public function __construct($user,$pass){
  
         $this -> user = $user;
-        $this -> pass = md5($pass,false);
-    }
+        $this -> pass = $pass;
+        //$this -> pass = md5($pass,false);
+    }//FIN CONSTRUCTOR
      
  
     public function getLogin(){

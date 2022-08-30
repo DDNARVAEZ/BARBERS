@@ -3,6 +3,8 @@
  
     class PlantillaController{
         public function ctrPlantilla(){
+                /*se hace la validacion correspondiente para que el usuario sea enviado a la interfaz de home de usuario 
+                de lo contrario permanecera en la interfaz de login */
  
             if (isset($_SESSION["login"]) and $_SESSION["login"] == true){
                 include_once "view/module/direcc.php";
@@ -16,17 +18,5 @@
         }
     }
    
-    /* if (isset ($_GET["ruta"]) && $_GET["ruta"]=="registrar"){
-        include_once "view/module/Form_Usua.php";
-    }else{
-        include_once "view/module/login.php";
- 
-    }
-   
-    if (isset ($_GET["ver"]) && $_GET["ver"]=="VerUsu"){
-        include_once "view/module/modulo.usuario.php";
-    }else{
-        include_once "view/module/login.php";
-    } */
     ?>
  
